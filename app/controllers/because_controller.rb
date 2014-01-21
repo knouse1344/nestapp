@@ -1,0 +1,2 @@
+class BecauseController < ApplicationController
+end
