@@ -17,11 +17,78 @@
 	}
 
 	#graphic {
-		width: 600px;
-		height: 600px;
 		margin-right: auto;
 		margin-left: auto;
 		border: 1px solid #cacaca;
+
+		#tritop {
+			margin-left: auto;
+			margin-right: auto;
+			width: 327px;
+			height: 377px;
+			background: url('/assets/tri_top.png');
+		}
+
+		.top {
+			width: 327px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.bottom {
+			margin-top: -94px;
+			width: 698px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#trileft {
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 349px;
+			height: 305px;
+			background: url('/assets/tri_left.png');
+		}
+
+		#triright {
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 338px;
+			height: 305px;
+			background: url('/assets/tri_right.png');
+		}
+
+		.top_hover {
+			opacity: 0;
+			width: 327px;
+			height: 377px;
+		}
+
+		.top_hover:hover {
+			opacity: 1;
+		}
+
+		.left_hover {
+			opacity: 0;
+			width: 349px;
+			height: 305px;
+		}
+
+		.left_hover:hover {
+			opacity: 1;
+		}
+
+
+		.right_hover {
+			opacity: 0;
+			width: 338px;
+			height: 305px;
+		}
+
+		.right_hover:hover {
+			opacity: 1;
+		}		
 	}
 
 	.links {

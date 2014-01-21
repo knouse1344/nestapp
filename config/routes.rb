@@ -10,6 +10,7 @@ Nestapp::Application.routes.draw do
   get 'because/iamanengineer'
   get 'because/iamadesigner'
   get 'because/iamabusinessman'
+  get 'documents/BKnouse_resume_January2014'
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
