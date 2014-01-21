@@ -6,6 +6,11 @@ Nestapp::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'welcome#index'
+
+  get 'because/iamanengineer'
+  get 'because/iamadesigner'
+  get 'because/iamabusinessman'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
