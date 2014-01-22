@@ -1,3 +1,9 @@
+<script type="text/javascript">
+    $(function() {
+        $('.triangle').maphilight();
+    });
+</script>
+
 <div id="triangle">
 	<div id="bg"> </div>
 	<div id="starburst"></div>
@@ -5,14 +11,12 @@
 	<h1>Nest should hire Bryan Knouse because:</h1>
 
 	<div id="graphic">
-		<div class="top">
-			<a href="/i_am_an/engineer"><div id="tritop"><img class="top_hover" src="/assets/tri_top_hover.png" /></div></a>
-		</div>
-		<div class="bottom">
-			<a href="/i_am_a/designer"><div id="trileft"><img class="left_hover" src="/assets/tri_left_hover.png" /></div></a>
-			<a href="/i_am_an/entrepreneur"><div id="triright"><img class="right_hover" src="/assets/tri_right_hover.png" /></div></a>
-		</div>
-
+		<img class="triangle" alt="triangle" usemap="#map" src="/assets/triangle.png" />
+		<map name="map">
+		    <area href="/i_am_an/engineer" shape="poly" class="tophover" coords="358,28,519,308,360,400,196,307" alt="Link" title="Top Triangle">
+		    <area href="/i_am_a/designer" shape="poly" coords="192,315,354,410,354,614,18,614" alt="Link" title="Default behavior">
+		    <area href="/i_am_an/entrepreneur" shape="poly" coords="363,409,522,316,695,614,363,614" alt="Link" title="Default behavior">
+		</map>
 	</div>
 
 	<div class="links">
