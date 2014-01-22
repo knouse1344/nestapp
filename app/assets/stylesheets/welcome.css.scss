@@ -19,7 +19,6 @@
 	#graphic {
 		margin-right: auto;
 		margin-left: auto;
-		border: 1px solid #cacaca;
 
 		#tritop {
 			margin-left: auto;
@@ -115,13 +114,24 @@
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	z-index: -1;
+	z-index: -2;
 	background: #fafafa; /* Old browsers */
-	background: -moz-linear-gradient(top,  #fafafa 56%, #cecece 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,#fafafa), color-stop(100%,#cecece)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #fafafa 56%,#cecece 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #fafafa 56%,#cecece 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #fafafa 56%,#cecece 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #fafafa 56%,#cecece 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #fafafa 44%, #bbbbbb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#fafafa), color-stop(100%,#bbbbbb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fafafa 44%,#bbbbbb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fafafa 44%,#bbbbbb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fafafa 44%,#bbbbbb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fafafa 44%,#bbbbbb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#bbbbbb',GradientType=0 ); /* IE6-9 */
+}
+
+#starburst {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: url('/assets/starburst.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: .75;
 }

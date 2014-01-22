@@ -117,7 +117,7 @@
 }
 
 #concept_row {
-	width: 85%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -127,11 +127,11 @@
 	.concepts {
 		display: inline-block;
 		vertical-align: top;
-		padding-top: 35px;
+		padding-top: 3px;
 
 		img {
 			display: inline-block;
-			width: 45%;
+			width: 48%;
 			border: 1px solid #bbb;
 		}
 	}
@@ -139,10 +139,11 @@
 	.design {
 		display: inline-block;
 		vertical-align: top;
+		width: 50%;
 
 		img {
 			border: 1px solid #bbb;
-			width: 90%;
+			width: 49%;
 		}
 	}
 
@@ -153,7 +154,7 @@
 
 		img {
 			border: 1px solid #bbb;
-			width:90%;
+			width:60%;
 		}
 	}
 
@@ -163,7 +164,7 @@
 
 		img {
 			border: 1px solid #bbb;
-			width: 90%;
+			width: 60%;
 		}
 	}
 
@@ -177,38 +178,52 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
 	}
-
-	.stretch {
-		width: 100%;
-		display: inline-block;
-		font-size: 0;
-		line-height: 0;
-	}
 }
 
+.stretch {
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+}
 
 
 
 ///////DESIGN
 
-.d_title {
+#des_title {
+	padding-top: 4em;
+	padding-bottom: 5em;
+	width: 400px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+	img {
+		width: 400px;
+	}
+}
+
+.d_subtitle {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 600;
-	color: #666;
+	color: #eee;
 	width: 30%;
 	font-size: 1.75em;
 	padding: .5em 0 .5em 0;
-	background: #ddd;
+	background: #444;
 }
 
 .d_left {
-	float: left;
+	position: absolute;
+	left: 0;
 	text-align: right;
 	padding-right: 2em;
 }
 
 .d_right {
-	float: right;
+	position: absolute;
+	right: 0;
 	text-align: left;
 	padding-left: 2em;
 }
@@ -216,79 +231,115 @@
 #content {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5em;
 	width: 90%;
-	border: 1px solid;
+
+	.row {
+		width: 100%;
+		padding-bottom: 3em;
+		margin-bottom: 2em;
+		margin-top: 7.5em;
+		display: inline-block;
+	}
+
+	.description {
+		padding-top: 2em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 200;
+		font-size: 1.1em;
+		text-align: center;
+	}
 
 	.interface {
-		width: 47%;
-		height: 350px;
-		float:left;
-		background: #aaa;
+		max-width: 50%;
+		height: 400px;
+		display: inline-block;
+
+		.imgroup {
+			text-align: justify;
+
+			img {
+				display: inline-block;
+				width: 45%;
+				border: 1px solid #ddd;
+			}
+		}
 	}
 
 	.analytics {
-		width: 47%;
-		height: 350px;
+		max-width: 44%;
+		border: 1px solid;
 		float: right;
-		background: #aaa;
+
+		.google {
+			height: 220px;
+			background: #aaa;
+		}
 	}
 
 	.product {
-		width: 47%;
-		height: 350px;
+		max-width: 50%;
 		float: left;
-		margin-top: 2.5em;
-		background: #ddd;
+
+		.imgroup {
+			text-align: justify;
+
+
+			img {
+				margin-left: auto;
+				margin-right: auto;
+				display: inline-block;
+				width: 30%;
+				border: 1px solid #ddd;
+			}
+		}
 	}
 
 	.scorecard {
-		width: 47%;
-		height: 350px;
+		max-width: 44%;
 		float: right;
-		margin-top: 2.5em;
-		color: #666;
-		background: #ddd;
 
-		.text {
-			width: 15em;
-			font-family: 'Source Sans Pro',sans-serif;
-			font-weight:300;
-			font-size: 1.15em;
-			line-height: 1.75em;
-			text-transform: uppercase;
-			text-align: right;
-			display: inline-block;
-		}
-
-		#dots {
-			width: 15em;
-			margin-left: .5em;
-			display: inline-block;
+		.grid {
 			vertical-align: top;
+			float: right;
 
-			.circrow {
-				width: 15em;
-				padding-top: .5em;
-				padding-bottom: .18em;
+			.text {
+				font-family: 'Source Sans Pro',sans-serif;
+				font-weight:300;
+				font-size: 1.15em;
+				line-height: 1.75em;
+				color: #666;
+				text-transform: uppercase;
+				text-align: right;
+				display: inline-block;
+			}
 
-				.outer {
-					width: 12px;
-					height: 12px;
-					border-radius: 150px;
-					margin-right: .25em;
-					display: inline-block;
-					border: 2px solid #777;
-				}
+			#dots {
+				margin-left: .5em;
+				display: inline-block;
+				vertical-align: top;
 
-				.inner {
-					width: 8px;
-					height: 8px;
-					border-radius: 60px;
-					background: #333;
-					margin-top: .125em;
-					margin-left: auto;
-					margin-right: auto;
+				.circrow {
+					padding-top: .5em;
+					padding-bottom: .18em;
+
+					.outer {
+						width: 12px;
+						height: 12px;
+						border-radius: 150px;
+						margin-right: .25em;
+						display: inline-block;
+						border: 2px solid #777;
+					}
+
+					.inner {
+						width: 8px;
+						height: 8px;
+						border-radius: 60px;
+						background: #333;
+						margin-top: .125em;
+						margin-left: auto;
+						margin-right: auto;
+					}
 				}
 			}
 		}
@@ -299,6 +350,13 @@
 	}
 }
 
+#des_footer {
+	background: url('/assets/design_design.png') repeat-x;
+	background-position: bottom;
+	height: 330px;
+	width: 100%;
+	padding-top: 7.5em;
+}
 
 
 
