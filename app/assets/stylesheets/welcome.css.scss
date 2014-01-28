@@ -28,6 +28,44 @@
 		margin-right: 50%;
 		right: -350px;
 
+		map {
+			display: block;
+			z-index: 30;
+
+			area {
+				display: block;
+				position: relative;
+				z-index: 30;
+			}
+
+			div {
+				display: none;
+				width: 400px;
+				height: 400px;
+				-webkit-transition: all .25s;
+		        -moz-transition: all .25s;
+		        -ms-transition: all .25s;
+		        -o-transition: all .25s;
+		        transition: all .25s;
+			}
+
+			area:hover + div {
+				display: block;
+				opacity: 1;
+			}
+
+			img {
+				position: absolute;
+				opacity: .25;
+				top: 0;
+				left: 100px;
+			}
+
+			.opacity {
+				opacity: 1;
+			}
+		}
+
 		.triangle {
 			margin-left: auto;
 			margin-right: auto;
@@ -36,36 +74,61 @@
 			z-index: 2;
 		}
 
-		.tophover {
-			border: none;
-			opacity: 1;
-			background: #000;
-			color: #000;
+		.hover_image {
+			position: absolute;
+			-webkit-transition: all .15s;
+	        -moz-transition: all .15s;
+	        -ms-transition: all .15s;
+	        -o-transition: all .15s;
+	        transition: all .15s;
+			z-index: 15;
 		}
-		.tophover:hover {
-			opacity: 0;
-			border: 3px solid #c12c13;
-			color: #fff;
-			background: #c12c13;
+
+		.t {
+			top:27px;
+			left: 194px;
+		}
+
+		.br {
+			top: 313px;
+			right: 1px;
+		}
+
+		.bl {
+			top: 314px;
+			left: 2px;
 		}
 	}
 
 	.links {
 		text-align: center;
-		padding-top: 5em;
+		position: absolute;
+		width: 900px;
+		left: 50%;
+		margin-left: -450px;
+		top: 90%;
 		color: #888;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		font-size: 1.5em;
+		font-size: 1.2em;
 
 		a {
 			text-decoration: none;
 			color: #888;
+			-webkit-transition: all .15s;
+	        -moz-transition: all .15s;
+	        -ms-transition: all .15s;
+	        -o-transition: all .15s;
+	        transition: all .15s;
+		}
+
+		a:hover {
+			color: #aaa;
 		}
 
 		.divider {
-			padding-left: 5em;
-			padding-right: 5em;
+			padding-left: 3.5em;
+			padding-right: 3.5em;
 		}
 	}
 }
