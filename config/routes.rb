@@ -1,6 +1,7 @@
 Nestapp::Application.routes.draw do
-  get "i_am_an/engineer"
+
   get "welcome/index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -11,7 +12,7 @@ Nestapp::Application.routes.draw do
   get 'i_am_a/designer'
   get 'i_am_an/entrepreneur'
   get 'i_am_an/engineer'
-  get 'documents/BKnouse_resume_January2014'
+  get 'documents/resume'
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

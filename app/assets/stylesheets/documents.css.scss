@@ -1,3 +1,25 @@
 // Place all the styles related to the documents controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#download {
+
+	.block {
+		margin-left: 25%;
+		margin-top: 5%;
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		background: #444;
+		-webkit-transition: all .15s;
+        -moz-transition: all .15s;
+        -ms-transition: all .15s;
+        -o-transition: all .15s;
+        transition: all .15s;
+	}
+
+	.block:hover {
+		margin-top:6%;
+	}
+}

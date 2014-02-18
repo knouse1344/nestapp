@@ -52,6 +52,11 @@
 			area:hover + div {
 				display: block;
 				opacity: 1;
+				-webkit-transition: all .25s;
+		        -moz-transition: all .25s;
+		        -ms-transition: all .25s;
+		        -o-transition: all .25s;
+		        transition: all .25s;
 			}
 
 			img {
@@ -86,17 +91,17 @@
 
 		.t {
 			top:27px;
-			left: 194px;
+			left: 94px;
 		}
 
 		.br {
 			top: 313px;
-			right: 1px;
+			right: 39px;
 		}
 
 		.bl {
 			top: 314px;
-			left: 2px;
+			left: -90px;
 		}
 	}
 
