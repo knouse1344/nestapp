@@ -5,26 +5,42 @@
 
 #resume {
 	width: 60%;
+	padding: 5em 0 5em 0;
 	margin-left: auto;
 	margin-right: auto;
 
+	.dl_link {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.3em;
+		font-weight: bold;
+		color: #bbb;
+		position: absolute;
+		padding-left: 50px;
+		margin-top: 20px;
+		z-index: 10;
+	}
 
-	.block {
-		margin-left: 25%;
-		margin-top: 5%;
-		cursor: pointer;
-		width: 40px;
-		height: 40px;
-		background: #444;
+	.dl_arrow {
+		margin-top: 15px;
+		position: absolute;
+		opacity: .25;
+		background-size: 100%;
 		-webkit-transition: all .15s;
         -moz-transition: all .15s;
         -ms-transition: all .15s;
         -o-transition: all .15s;
         transition: all .15s;
+
+        img {
+        	height: 50px;
+        }
 	}
 
-	.block:hover {
-		margin-top:6%;
+	a:hover + .dl_arrow {
+		margin-top:25px;
+		opacity: 1;
 	}
 
 	#header {
@@ -62,18 +78,21 @@
 			ul {
 				margin-left: auto;
 				margin-right: auto;
-				width: 80%;
-				margin-top: 50px;
+				width: 100%;
+				margin: 30px 0 20px 0;
+				padding: 0;
+				font-family: 'Source Sans Pro', sans-serif;
+				color: #ccc;
 
 				li {
-					color: #cacaca;
+					color: #aaa;
 					display: inline-block;
 					margin-right: 15px;
 					margin-left: 15px;
 
 					a {
 						text-decoration: none;
-						color: #cacaca;
+						color: #aaa;
 					}
 				}
 			}
@@ -81,40 +100,57 @@
 	}
 
 	.icon {
-		width: 15%;
-		height: 80px;
 		background: #cacaca;
 		margin-top: 5px;
 		margin-bottom: 4em;
 	}
 
 	.reads {
+		background: url('/assets/Resume_book_icon_small.png');
+		width: 80px;
+		height: 31px;
 
 	}
 
 	.target {
+		width: 80px;
+		height: 80px;
+		background: url('/assets/Resume_target_icon_small.png');
 
 	}
 
 	.work {
-
+		background: url('/assets/Resume_activities_icon_small.png');
+		width: 80px;
+		height: 80px;
 	}
 
 	.education {
-
+		background: url('/assets/Resume_graduation_icon_small.png');
+		width: 80px;
+		height: 44px;
 	}
 
 	.resume_skills {
-		display: inline-block;
+		float: left;
+		background: url('/assets/Resume_hammer_icon_small.png');
+		width: 80px;
+		height: 80px;
+		margin-right: 8%;
 	}
 
 	.awards {
 		display: inline-block;
+		float: right;
+		background: url('/assets/Resume_star_icon_small.png');
+		width: 80px;
+		height: 76px;
+		margin-right: 7%;
 
 	}
 
 	#target, #reads, #work, #education {
-		width: 80%;
+		width: 85%;
 		float: right;
 		margin-bottom: 4em;
 
@@ -140,15 +176,14 @@
 	}
 
 	#resume_skills {
-		width: 28%;
 		display: inline-block;
 		vertical-align: top;
 	}
 
 	#awards {
-		width: 32%;
 		display: inline-block;
 		vertical-align: top;
+		float:right;
 	}
 
 	.bottom {
