@@ -330,7 +330,7 @@
 
 #products {
 	width: 100%;
-	background: url('/assets/design_products_bg.jpg') repeat-x;
+	background: #d4d4d4;
 
 	.container {
 		padding-top: 5em;
@@ -341,17 +341,18 @@
 
 		.products {
 			width: 100%;
-			max-width: 947px;
+			max-width: 1500px;
 		}
 
 		.description {
 			width: 80%;
+			color: #444;
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 5em;
 			padding-bottom: 8em;
 			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1em;
+			font-size: 1.25em;
 			font-weight: 200;
 			text-align: center;
 		}
@@ -367,7 +368,7 @@
 
 	.engineering_photo {
 		width: 100%;
-		max-width: 1115px;
+		max-width: 1296px;
 	}
 
 	.eng_desc {
@@ -377,11 +378,11 @@
 		padding-right: 5%;
 		padding-top: 5em;
 		padding-bottom: 5em;
+		margin-top: -350px;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1em;
+		font-size: 1.25em;
 		font-weight: 200;
 		text-align: center;
-		background: url('/assets/design_engineering_textbox.jpg') no-repeat;
 		background-size: contain;
 		background-position: center;
 	}
@@ -435,7 +436,8 @@
 		}
 
 		img {
-
+			width: 1900px;
+			margin-left: -20%;
 		}
 
 	}
@@ -469,6 +471,7 @@
 		height: 700px;
 		margin-left: auto;
 		margin-right: auto;
+		text-align: center;
 		background: #444; /* Old browsers */
 		background: -moz-radial-gradient(center, ellipse contain,  #444 0%, #333333 95%); /* FF3.6+ */
 		background: -webkit-gradient(radial, center center, 0px, center center, 95%, color-stop(0%,#444), color-stop(95%,#333333)); /* Chrome,Safari4+ */
@@ -479,8 +482,9 @@
 
 
 		img {
-			max-width: 1200px;
-			width: 100%;
+			width: 497px;
+			height: 232px;
+			margin-top: 200px;
 		}
 
 
