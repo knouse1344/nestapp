@@ -14,7 +14,7 @@
 
 	h1 {
 		margin:0;
-		padding: 2em;
+		padding: 2em 0 3em 0;
 		text-align: center;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
@@ -23,8 +23,8 @@
 
 	#graphic {
 		position: absolute;
-		width: 700px;
-		height: 600px;
+		width: 692px;
+		height: 596px;
 		margin-right: 50%;
 		right: -350px;
 
@@ -39,8 +39,8 @@
 		#triangle {
 			margin-left: auto;
 			margin-right: auto;
-			width: 700px;
-			height: 700px;
+			width: 692px;
+			height: 596px;
 			z-index: 0;
 		}
 	}
