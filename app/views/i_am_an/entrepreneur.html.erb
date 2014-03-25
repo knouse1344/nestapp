@@ -7,7 +7,17 @@
 <div id="page">
 	<div id="bg"> </div>
 
-	<div id="biz_header"><h1> I AM AN ENTREPRENEUR </h1><img src="/assets/business_header.png" /></div>
+	<div id="header_circles">
+		<div class="biz_circle one"> </div>
+		<div class="biz2_circle two"> </div>
+		<div class="biz3_circle three"> </div>
+		<div class="biz2_circle four"> </div>
+		<div class="biz3_circle five"> </div>
+		<div class="biz2_circle six"> </div>
+		<div class="biz_circle seven"> </div>
+	</div>
+
+	<div id="biz_header"><h1> I AM AN ENTREPRENEUR </h1></div>
 
 	<div id="biz_content">
 		<div class="left">
@@ -104,3 +114,47 @@
 		<div class="clear"></div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$('.biz_circle').bind('fade-cycle', function() {
+	    $(this).fadeOut(3000, function() {
+	        $(this).fadeIn(2000, function() {
+	            $(this).trigger('fade-cycle');
+	        });
+	    });
+	});
+
+	$('.biz_circle').each(function(index, elem) {
+	    setTimeout(function() {
+	        $(elem).trigger('fade-cycle');
+	    }, index * 666);
+	});
+
+	$('.biz2_circle').bind('fade-cycle', function() {
+	    $(this).fadeOut(4400, function() {
+	        $(this).fadeIn(3000, function() {
+	            $(this).trigger('fade-cycle');
+	        });
+	    });
+	});
+
+	$('.biz2_circle').each(function(index, elem) {
+	    setTimeout(function() {
+	        $(elem).trigger('fade-cycle');
+	    }, index * 456);
+	});
+
+	$('.biz3_circle').bind('fade-cycle', function() {
+	    $(this).fadeOut(3900, function() {
+	        $(this).fadeIn(2700, function() {
+	            $(this).trigger('fade-cycle');
+	        });
+	    });
+	});
+
+	$('.biz3_circle').each(function(index, elem) {
+	    setTimeout(function() {
+	        $(elem).trigger('fade-cycle');
+	    }, index * 800);
+	});	
+</script>
