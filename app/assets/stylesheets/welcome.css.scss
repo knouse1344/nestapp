@@ -8,7 +8,7 @@
 	border: 2px solid #C800F5;
 }
 
-#triangle {
+#triangle_page {
 	width: 100%;
 	height: 100%;
 
@@ -30,78 +30,18 @@
 
 		map {
 			display: block;
-			z-index: 30;
+			z-index: 0;
 
 			area {
-				display: block;
-				position: relative;
-				z-index: 30;
-			}
-
-			div {
-				display: none;
-				width: 400px;
-				height: 400px;
-				-webkit-transition: all .25s;
-		        -moz-transition: all .25s;
-		        -ms-transition: all .25s;
-		        -o-transition: all .25s;
-		        transition: all .25s;
-			}
-
-			area:hover + div {
-				display: block;
-				opacity: 1;
-				-webkit-transition: all .25s;
-		        -moz-transition: all .25s;
-		        -ms-transition: all .25s;
-		        -o-transition: all .25s;
-		        transition: all .25s;
-			}
-
-			img {
-				position: absolute;
-				opacity: .25;
-				top: 0;
-				left: 100px;
-			}
-
-			.opacity {
-				opacity: 1;
 			}
 		}
 
-		.triangle {
+		#triangle {
 			margin-left: auto;
 			margin-right: auto;
 			width: 700px;
 			height: 700px;
-			z-index: 2;
-		}
-
-		.hover_image {
-			position: absolute;
-			-webkit-transition: all .15s;
-	        -moz-transition: all .15s;
-	        -ms-transition: all .15s;
-	        -o-transition: all .15s;
-	        transition: all .15s;
-			z-index: 15;
-		}
-
-		.t {
-			top:27px;
-			left: 94px;
-		}
-
-		.br {
-			top: 313px;
-			right: 39px;
-		}
-
-		.bl {
-			top: 314px;
-			left: -90px;
+			z-index: 0;
 		}
 	}
 

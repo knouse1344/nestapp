@@ -1,17 +1,17 @@
-<div id="triangle">
+<div id="triangle_page">
 	<div id="bg"> </div>
 	<div id="starburst"></div>
 
 	<h1>Nest should hire Bryan Knouse because:</h1>
 	
 	<div id="graphic">
-		<img class="triangle" alt="triangle" usemap="#map" src="/assets/triangle.png" />
-		<map name="map">
-		    <area id="tri_top" href="/i_am_an/engineer" shape="poly" coords="358,28,519,308,360,400,196,307" alt="Link" title="Top Triangle"><div class="hover_image t"><a href="/i_am_an/engineer"><img src="/assets/tri_top_hover.png" /></a></div>
+		<img id="triangle" alt="triangle" usemap="#triangle" src="/assets/triangle.png" />
+		<map name="triangle">
+		    <area id="tri_top" data-key="top" href="/i_am_an/engineer" shape="poly" coords="358,28,519,308,360,400,196,307" alt="Link" title="Engineering">
 		    
-		    <area href="/i_am_a/designer" shape="poly" coords="192,315,354,410,354,614,18,614" alt="Link" title="Default behavior"><div class="hover_image bl"><a href="/i_am_a/designer"><img src="/assets/tri_left_hover.png" /></a></div>
+		    <area href="/i_am_a/designer" data-key="left" shape="poly" coords="192,315,354,410,354,614,18,614" alt="Link" title="Design">
 
-		    <area href="/i_am_an/entrepreneur" shape="poly" coords="363,409,522,316,695,614,363,614" alt="Link" title="Default behavior"><div class="hover_image br"><a href="/i_am_an/entrepreneur"><img src="/assets/tri_right_hover.png" /></a></div>
+		    <area href="/i_am_an/entrepreneur" shape="poly" coords="363,409,522,316,695,614,363,614" alt="Link" title="Entrepreneurship">
 		</map>
 	</div>
 
@@ -19,3 +19,15 @@
 		<a href="/documents/resume">resume</a><span class="divider">|</span><a href="mailto:bryan.knouse@gmail.com">email</a><span class="divider">|</span><a href="http://www.linkedin.com/pub/bryan-knouse/35/a7/a57" target="_blank">linkedin</a><span class="divider">|</span><a href="https://github.com/knouse1344" target="_blank">github</a>
 	</div>
 </div>
+
+<script>
+$(document).ready(function ()
+{
+	$('#triangle').mapster({
+	singleSelect : true,
+	clickNavigate : true,
+	render_highlight : { altImage : '/assets/tri_top_hover_big.png' },
+    mapKey: 'data-key'
+});
+});
+</script>
