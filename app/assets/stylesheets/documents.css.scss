@@ -13,19 +13,21 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.3em;
+		font-size: 1.1em;
 		font-weight: bold;
 		color: #bbb;
 		position: absolute;
-		padding-left: 50px;
-		margin-top: 20px;
+		padding-top: 30px;
+		top: 225px;
+		left: 35px;
 		z-index: 10;
 	}
 
 	.dl_arrow {
-		margin-top: 15px;
+		top: 205px;
+		left: 80px;
 		position: absolute;
-		opacity: .25;
+		opacity: .1;
 		background-size: 100%;
 		-webkit-transition: all .15s;
         -moz-transition: all .15s;
@@ -39,7 +41,7 @@
 	}
 
 	a:hover + .dl_arrow {
-		margin-top:25px;
+		top:210px;
 		opacity: 1;
 	}
 
