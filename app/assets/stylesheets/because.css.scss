@@ -89,10 +89,10 @@
 	}
 
 	img {
-		top: 40px;
+		top: -30px;
 		right: 0;
-		opacity: .05;
-		width: 1036px;
+		opacity: .035;
+		width: 100%;
 		z-index: -1;
 		position: absolute;
 	}
@@ -218,7 +218,7 @@
 
 
 #concept_row {
-	top: -595px;
+	top: -605px;
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -254,13 +254,42 @@
 		}
 	}
 
-	.concepts {
+	.digital {
 		width: 90%;
-		height: 90%;
-		max-width: 1600px;
+		max-width: 1500px;
 		position: absolute;
 		vertical-align: top;
-		left: 10%;
+		left: 8%;
+
+		.digi {
+			float: right;
+		}
+
+		.skills {
+		  width: 25%;
+		  float: right;
+		  padding-right: 8em;
+		  font-size: 2em;
+		  font-style: italic;
+		  font-family: 'Source Sans Pro', sans-serif;
+		  font-weight: 600;
+		  color: #fafafa;
+		  text-align: left; 
+		}
+		  
+		  .skills .border {
+		  	padding-top: .25em;
+		  	margin-bottom: .25em;
+		  	border-bottom: 1px dotted #595959; 
+		  }
+	}
+
+	.concepts {
+		width: 95%;
+		max-width: 1700px;
+		position: absolute;
+		vertical-align: top;
+		left: 115%;
 
 		img {
 			max-width: 800px;
@@ -274,7 +303,7 @@
 		position: absolute;
 		min-width: 800px;
 		vertical-align: top;
-		left: 105%;
+		left: 205%;
 
 		img {
 			width: 33%;
@@ -288,7 +317,7 @@
 		min-width: 800px;
 		position: absolute;
 		vertical-align: top;
-		left: 205%;
+		left: 304%;
 
 		img {
 			margin-right: 2%;
@@ -303,7 +332,7 @@
 		max-width: 1600px;
 		position: absolute;
 		vertical-align: top;
-		left: 305%;
+		left: 410%;
 
 		img {
 			float: left;
@@ -325,8 +354,9 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////DESIGN
 
 #des_title {
-	padding-top: 13em;
-	padding-bottom: 10em;
+	padding-top: 4em;
+	padding-bottom: 8em;
+	text-align: center;
 
 	img {
 		width: 80%;
@@ -351,59 +381,67 @@
 	}
 }
 
-#rooneys {
-	padding-top: 5em;
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
+#web_ux {
+	padding-bottom: 3em;
 
-	.rooneys_imac {
-		max-width: 475px;
-		width: 50%;
-		float: left;
+	#rooneys {
+		padding-top: 5em;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+
+		.rooneys_imac {
+			max-width: 475px;
+			width: 50%;
+			float: left;
+		}
+
+		.rooneys_title {
+			float: right;
+			margin-right: 1%;
+			width: 45%;
+			max-width: 446px;
+		}
+
+		.rooneys_desc {
+			float: right;
+			width: 45%;
+			padding-top: 2em;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.2em;
+			line-height: 1.6em;
+			font-weight: 200;
+			text-align: center;
+		}
 	}
 
-	.rooneys_title {
-		float: right;
-		width: 50%;
-		max-width: 446px;
-	}
+	#rouhana {
+		padding-top: 8em;
+		padding-bottom: 8em;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
 
-	.rooneys_desc {
-		float: right;
-		width: 45%;
-		padding-top: 2em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1em;
-		font-weight: 200;
-		text-align: center;
-	}
-}
+		.rouhana_title {
+			width: 47%;
+			margin-left: 3%;
+			max-width: 374px;
+		}
 
-#rouhana {
-	padding-top: 8em;
-	padding-bottom: 8em;
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
+		.rouhana_desc {
+			width: 45%;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.2em;
+			line-height: 1.6em;
+			font-weight: 200;
+			text-align: center;
+		}
 
-	.rouhana_title {
-		width: 50%;
-		max-width: 374px;
-	}
-
-	.rouhana_desc {
-		width: 45%;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1em;
-		font-weight: 200;
-		text-align: center;
-	}
-
-	.rouhana_ipad {
-		float: right;
-		width: 50%;
-		max-width: 590px;
+		.rouhana_ipad {
+			float: right;
+			width: 50%;
+			max-width: 590px;
+		}
 	}
 }
 
@@ -432,6 +470,7 @@
 			padding-bottom: 8em;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
+			line-height: 1.6em;
 			font-weight: 200;
 			text-align: center;
 		}
@@ -443,6 +482,7 @@
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 4em;
 	padding-bottom: 8em;
 
 	.engineering_photo {
@@ -455,11 +495,11 @@
 		max-width: 979px;
 		padding-left: 5%;
 		padding-right: 5%;
-		padding-top: 5em;
-		padding-bottom: 5em;
-		margin-top: -350px;
+		padding-bottom: 3em;
+		margin-top: -24%;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 1.25em;
+		line-height: 1.6em;
 		font-weight: 200;
 		text-align: center;
 		background-size: contain;
@@ -500,19 +540,9 @@
 	width: 100%;
 	padding-top: 5em;
 	padding-bottom: 8em;
-	background: #424242;
+	background: #242424;
 
 	.container {
-		
-		.title {
-			padding-bottom: 1em;
-			font-size: 5em;
-			letter-spacing: -2px;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: 600;
-			text-align: center;
-			color: #fff;
-		}
 
 		img {
 			width: 1900px;
