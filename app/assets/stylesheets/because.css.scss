@@ -545,8 +545,10 @@
 	.container {
 
 		img {
-			width: 1900px;
-			margin-left: -20%;
+			width: 100%;
+			max-width: 1900px;
+			float: right;
+			margin-right: 25%;
 		}
 
 	}
