@@ -510,29 +510,80 @@
 
 #data {
 	width: 100%;
+	min-height: 900px;
 	background: #898989;
+	padding-bottom: 4em;
 
-	.container {
-		padding-top: 5em;
-		width: 60%;
-		height: 500px;
+	.design_circle {
+		background: #fecdc9;
+		opacity: 1;
+		position: relative;
+		z-index: 10;
+	}
+
+	.one {
+		width: 15px;
+		height: 15px;
+		border-radius: 15px;
+		left: 21.5%;
+		top: 215px;
+	}
+
+	.two {
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+		left: 22%;
+		top: 265px;
+	}
+
+	.three {
+		width: 5px;
+		height: 5px;
+		border-radius: 5px;
+		left: 19%;
+		top: 366px;
+	}
+
+	.four {
+		width: 12px;
+		height: 12px;
+		border-radius: 12px;
+		left: 24.7%;
+		top: 273px;
+	}	
+
+	.five {
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+		left: 23%;
+		top: 370px;
+	}	
+
+	.six {
+		width: 4px;
+		height: 4px;
+		border-radius: 4px;
+		left: 31.6%;
+		top: 600px;
+	}		
+
+	.data_image {
+		padding: 4em 0 4em 0;
+		float: right;
+		width: 1800px;
+	}
+
+	.data_desc{
 		margin-left: auto;
 		margin-right: auto;
-
-		img {
-			display: none;
-			width: 100%;
-			max-width: 1240px;
-		}
-
-		.strokes{
-			background: url('/assets/design_data_strokes.png') no-repeat;
-			background-size: 100%;
-			background-position: center;
-			height: 100%;
-			width: 100%;
-			max-width: 2000px;
-		}
+		width: 800px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.25em;
+		line-height: 1.6em;
+		font-weight: 200;
+		text-align: center;
 	}
 }
 
