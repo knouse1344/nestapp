@@ -159,7 +159,7 @@
 		margin-top: 0;
 		color: #cacaca;
 		font-family: 'Source Sans Pro', sans-serif;
-		z-index: 0;
+		z-index: 5;
 
 		.btn {
 			cursor: pointer;
@@ -218,7 +218,7 @@
 
 
 #concept_row {
-	top: -620px;
+	top: -608px;
 	height: 100%;
 	width: 100%;
 	padding: 0;
@@ -257,33 +257,53 @@
 	}
 
 	.digital {
-		width: 90%;
-		max-width: 1500px;
+		width: 95%;
+		min-height: 550px;
 		position: absolute;
 		vertical-align: top;
-		left: 8%;
+		left: 1%;
 
 		.digi {
-			float: right;
+			padding-top: 3em;
+			width: 65%;
+			position: absolute;
+			right: 0;
+			z-index: 10;
+
+			p {
+				width: 50%;
+				float: left;
+				z-index: 10;
+			}
 		}
 
 		.skills {
-		  width: 25%;
-		  float: right;
-		  padding-right: 8em;
-		  font-size: 2em;
-		  font-style: italic;
-		  font-family: 'Source Sans Pro', sans-serif;
-		  font-weight: 600;
-		  color: #fafafa;
-		  text-align: left; 
+			width: 45%;
+			margin-left: 5%;
+			float: left;
+			font-size: 2em;
+			font-style: italic;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 600;
+			color: #fafafa;
+			text-align: right; 
 		}
 		  
-		  .skills .border {
+	    .skills .border {
 		  	padding-top: .25em;
 		  	margin-bottom: .25em;
 		  	border-bottom: 1px dotted #595959; 
-		  }
+	    }
+
+	    img {
+	    	width: 50%;
+	    	max-width: 683px;
+			position: absolute;
+			margin-right: 2%;
+			margin-top: -3.2em;
+			opacity: .95;
+			z-index: 0;
+	    }
 	}
 
 	.concepts {
@@ -291,7 +311,7 @@
 		max-width: 1700px;
 		position: absolute;
 		vertical-align: top;
-		left: 108%;
+		left: 105%;
 
 		img {
 			padding-top:13px;
