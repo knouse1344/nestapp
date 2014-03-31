@@ -172,19 +172,18 @@
 }
 
 #nav_btns {
-	position: relative;
-	left: 45%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 25px;
-	height: 50px;
-	width: 150px;
+	height: 80px;
+	width: 250px;
+	font-size: 4em;
+	font-weight: 700;
 	z-index: 25;
 
 	.prev_btn {
-		width: 50px;
-		height: 50px;
-		background: #555;
 		float: left;
-		margin-right: 40px;
+		padding: 0 20px 0 20px;
 		cursor: auto;
 		opacity: 0;
 		-webkit-transition: all .25s;
@@ -199,11 +198,9 @@
 	}
 
 	.next_btn {
-		width: 50px;
-		height: 50px;
-		background: #555;
-		float: left;
+		float: right;
 		cursor: pointer;
+		padding: 0 20px 0 20px;
 		-webkit-transition: all .25s;
 	    -moz-transition: all .25s;
 	    -ms-transition: all .25s;
@@ -308,32 +305,47 @@
 
 	.concepts {
 		width: 95%;
-		padding-top: 2em;
+		padding-top: 3em;
 		max-width: 1700px;
 		position: absolute;
 		vertical-align: top;
 		left: 105%;
 
-		img {
+		.concepts_one {
 			padding-top:13px;
 			max-width: 800px;
-			width: 33%;
+			width: 29.5%;
 			float: left;
 			margin-right: 2%;
 		}
+
+		.concepts_two {
+			padding-top:13px;
+			max-width: 800px;
+			width: 36.5%;
+			float: left;
+			margin-right: 2%;
+		}		
 	}
 
 	.design {
 		width: 95%;
-		padding-top: 2em;
+		padding-top: 3em;
 		position: absolute;
 		min-width: 800px;
 		vertical-align: top;
 		left: 205%;
 
-		img {
+		.design_one {
 			padding-top: 13px;
-			width: 33%;
+			width: 31.2%;
+			float: left;
+			margin-right: 2%;
+		}
+
+		.design_two {
+			padding-top: 13px;
+			width: 34.8%;
 			float: left;
 			margin-right: 2%;
 		}
@@ -342,7 +354,7 @@
 	.testing {
 		width: 95%;
 		min-width: 800px;
-		padding-top: 2em;
+		padding-top: 3em;
 		position: absolute;
 		vertical-align: top;
 		left: 304%;
@@ -359,7 +371,7 @@
 		width: 95%;
 		min-width: 800px;
 		max-width: 1600px;
-		padding-top: 2em;
+		padding-top: 3em;
 		position: absolute;
 		vertical-align: top;
 		left: 407%;
@@ -367,8 +379,8 @@
 		img {
 			padding-top: 13px;
 			float: left;
-			margin-right: 2%;
-			width: 32%;
+			margin-right: 4%;
+			width: 31%;
 		}
 	}
 }
