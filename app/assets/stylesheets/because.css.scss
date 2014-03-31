@@ -245,8 +245,8 @@
 			padding: 0px 0 10px 0;
 			margin: 0;
 			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.2em;
-			line-height: 1.5em;
+			font-size: 1em;
+			line-height: 1.6em;
 			font-weight: 300;
 			color: #eee;
 		}
@@ -436,64 +436,115 @@
 #web_ux {
 	padding-bottom: 3em;
 
-	#rooneys {
-		padding-top: 5em;
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-
-		.rooneys_imac {
-			max-width: 475px;
-			width: 50%;
-			float: left;
+	@media (min-width: 1600px) {
+		#rooneys {
+			padding-top: 5em;
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
 		}
+	}	
 
-		.rooneys_title {
-			float: right;
-			margin-right: 1%;
-			width: 45%;
-			max-width: 446px;
-		}
-
-		.rooneys_desc {
-			float: right;
-			width: 45%;
-			padding-top: 2em;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.2em;
-			line-height: 1.6em;
-			font-weight: 200;
-			text-align: center;
+	@media (max-width: 1600px) and (min-width: 1000px) {
+		#rooneys {
+			padding-top: 5em;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
-	#rouhana {
-		padding-top: 8em;
-		padding-bottom: 8em;
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-
-		.rouhana_title {
-			width: 47%;
-			margin-left: 3%;
-			max-width: 374px;
+	@media (max-width: 1000px) {
+		#rooneys {
+			padding-top: 5em;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
 		}
+	}			
+	
 
-		.rouhana_desc {
-			width: 45%;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.2em;
-			line-height: 1.6em;
-			font-weight: 200;
-			text-align: center;
-		}
+	.rooneys_imac {
+		max-width: 475px;
+		width: 50%;
+		float: left;
+	}
 
-		.rouhana_ipad {
-			float: right;
-			width: 50%;
-			max-width: 590px;
+	.rooneys_title {
+		float: right;
+		margin-right: 1%;
+		width: 45%;
+		max-width: 446px;
+	}
+
+	.rooneys_desc {
+		float: right;
+		width: 45%;
+		padding-top: 2em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.2em;
+		line-height: 1.6em;
+		font-weight: 200;
+		text-align: center;
+	}
+
+	@media (min-width: 1600px) {
+		#rouhana {
+			padding-top: 8em;
+			padding-bottom: 8em;
+			width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
 		}
+	}
+
+	@media (max-width: 1600px) and (min-width: 1000px) {
+		#rouhana {
+			padding-top: 8em;
+			padding-bottom: 8em;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.rouhana_ipad {
+				padding-top: 2em;
+			}
+		}
+	}	
+
+	@media (max-width: 1000px) {
+		#rouhana {
+			padding-top: 8em;
+			padding-bottom: 8em;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+
+			.rouhana_ipad {
+				padding-top: 3em;
+			}
+		}
+	}	
+
+	.rouhana_title {
+		width: 47%;
+		margin-left: 3%;
+		max-width: 374px;
+	}
+
+	.rouhana_desc {
+		width: 45%;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.2em;
+		line-height: 1.6em;
+		font-weight: 200;
+		text-align: center;
+	}
+
+	.rouhana_ipad {
+		float: right;
+		width: 50%;
+		max-width: 590px;
 	}
 }
 
@@ -777,6 +828,27 @@
 			text-align: center;
 		}
 	}	
+
+	@media (max-width: 900px)  {
+		
+
+		.data_image {
+			padding: 4em 0 4em 0;
+			float: right;
+			width: 90%;
+		}
+
+		.data_desc{
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.25em;
+			line-height: 1.6em;
+			font-weight: 200;
+			text-align: center;
+		}
+	}		
 
 }
 
