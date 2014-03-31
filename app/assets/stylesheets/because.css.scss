@@ -173,8 +173,8 @@
 
 #nav_btns {
 	position: relative;
-	left: 13%;
-	top: 80%;
+	left: 45%;
+	padding-top: 25px;
 	height: 50px;
 	width: 150px;
 	z-index: 25;
@@ -182,7 +182,7 @@
 	.prev_btn {
 		width: 50px;
 		height: 50px;
-		background: #cacaca;
+		background: #555;
 		float: left;
 		margin-right: 40px;
 		cursor: auto;
@@ -195,13 +195,13 @@
 	}
 
 	.prev_btn:hover {
-		background: #eee;
+		background: #999;
 	}
 
 	.next_btn {
 		width: 50px;
 		height: 50px;
-		background: #cacaca;
+		background: #555;
 		float: left;
 		cursor: pointer;
 		-webkit-transition: all .25s;
@@ -212,7 +212,7 @@
 	}
 
 	.next_btn:hover {
-		background: #eee;
+		background: #999;
 	}
 }
 
@@ -221,7 +221,6 @@
 	top: -608px;
 	height: 100%;
 	width: 100%;
-	padding: 0;
 	position: relative;
 	overflow: hidden;
 
@@ -264,50 +263,52 @@
 		left: 1%;
 
 		.digi {
-			padding-top: 3em;
-			width: 65%;
+			padding-top: 6em;
+			width: 40%;
 			position: absolute;
-			right: 0;
+			right: 30%;
 			z-index: 10;
 
 			p {
-				width: 50%;
+				width: 100%;
 				float: left;
 				z-index: 10;
 			}
 		}
 
 		.skills {
-			width: 45%;
-			margin-left: 5%;
-			float: left;
-			font-size: 2em;
+			position: absolute;
+			right: 0;
+			top: 40px;
+			font-size: 4em;
+			line-height: 2em;
+			letter-spacing: 3px;
 			font-style: italic;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: 600;
-			color: #fafafa;
+			color: #323232;
 			text-align: right; 
 		}
 		  
 	    .skills .border {
 		  	padding-top: .25em;
 		  	margin-bottom: .25em;
-		  	border-bottom: 1px dotted #595959; 
+		  	border-bottom: 1px dotted #333; 
 	    }
 
 	    img {
-	    	width: 50%;
-	    	max-width: 683px;
+	    	width: 35%;
+	    	max-width: 579px;
 			position: absolute;
 			margin-right: 2%;
-			margin-top: -3.2em;
-			opacity: .95;
+			opacity: .4;
 			z-index: 0;
 	    }
 	}
 
 	.concepts {
 		width: 95%;
+		padding-top: 2em;
 		max-width: 1700px;
 		position: absolute;
 		vertical-align: top;
@@ -324,6 +325,7 @@
 
 	.design {
 		width: 95%;
+		padding-top: 2em;
 		position: absolute;
 		min-width: 800px;
 		vertical-align: top;
@@ -340,6 +342,7 @@
 	.testing {
 		width: 95%;
 		min-width: 800px;
+		padding-top: 2em;
 		position: absolute;
 		vertical-align: top;
 		left: 304%;
@@ -356,6 +359,7 @@
 		width: 95%;
 		min-width: 800px;
 		max-width: 1600px;
+		padding-top: 2em;
 		position: absolute;
 		vertical-align: top;
 		left: 407%;
@@ -477,7 +481,7 @@
 	background: #d4d4d4;
 
 	.container {
-		padding-top: 5em;
+		padding-top: 4em;
 		text-align: center;
 		width: 60%;
 		margin-left: auto;
@@ -485,6 +489,7 @@
 
 		.products {
 			width: 100%;
+			margin-left: -5%;
 			max-width: 1500px;
 		}
 
@@ -493,7 +498,7 @@
 			color: #444;
 			margin-left: auto;
 			margin-right: auto;
-			padding-top: 5em;
+			padding-top: 2.5em;
 			padding-bottom: 8em;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
