@@ -1181,13 +1181,23 @@
 
 		.relationships {
 
-			.stars {
-				width: 250px;
-				height: 75px;
-				background: url('/assets/business_stars.png') no-repeat;
-				background-size: contain;
+			.star_box {
+				width: 500px;
+				height: 80px;
 				margin-left: auto;
 				margin-right: auto;
+				text-align: center; 
+
+				.star_img {
+					background: url('/assets/business_star.png') no-repeat;
+					background-size: contain;
+					display: inline-block;
+					width: 75px;
+					height: 75px;
+					margin-left: 10px;
+					margin-right: 10px;
+					opacity: 0;
+				}
 			}
 
 			.stars:hover {
@@ -1202,6 +1212,7 @@
 				font-weight: 400;
 				text-transform: uppercase;
 				letter-spacing: 1px;
+				padding-top: 1em;
 				color: #888;
 			}
 			
@@ -1243,7 +1254,6 @@
 		}
 
 		#personal_growth {
-			border: 1px solid;
 			width: 100%;
 			height: 400px;
 			
@@ -1252,7 +1262,7 @@
 				margin: 0;
 				display: inline-block;
 			}
-			
+
 			.earnings_graph {
 				width: 45%;
 				height: 150px;
@@ -1291,7 +1301,15 @@
 					vertical-align: bottom;
 					z-index: 5;
 
-					.growth_num {
+					.counter {
+						font-family: 'Source Sans Pro',sans-serif;
+						font-weight: 700;
+						padding-top: .5em;
+						color: #fff;
+						opacity: 0;
+					}
+
+					.count_style {
 						font-family: 'Source Sans Pro',sans-serif;
 						font-weight: 700;
 						padding-top: .5em;

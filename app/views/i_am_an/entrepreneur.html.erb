@@ -27,7 +27,13 @@
 		<div class="left">
 			<div class="title">CLIENT RELATIONSHIPS</div>
 			<div class="relationships">
-				<div class="stars"></div>
+				<div class="star_box">
+					<div class="star_img st_one"></div>
+					<div class="star_img st_two"></div>
+					<div class="star_img st_three"></div>
+					<div class="star_img st_four"></div>
+					<div class="star_img st_five"></div>
+				</div>
 				<div class="heading">Five star rating on Elance</div>
 
 				<div class="description">
@@ -76,9 +82,9 @@
 					</div>
 					<div class="growth_graph">
 						<div class="placeholder"> </div>
-						<div class="bar bar_one"><div class="growth_num">+ 66%</div></div>
-						<div class="bar bar_two"><div class="growth_num">+ 57%</div></div>
-						<div class="bar bar_three"><div class="growth_num">+ 40%</div></div>
+						<div class="bar bar_one"><span class="counter counter0 count_style" data-direction="up" data-interval="5" data-format="99" data-stop="66">0</span><span class="count_style style0">%</span></div>
+						<div class="bar bar_two"><span class="counter counter1" data-direction="up" data-interval="5" data-format="99" data-stop="57">0</span><span class="count_style style1">%</span></div>
+						<div class="bar bar_three"><span class="counter counter2" data-direction="up" data-interval="15" data-format="99" data-stop="40">0</span><span class="count_style style2">%</span></div>
 						<div class="xlabel rotate">Viewership</div><div class="xlabel rotate">Uniques</div><div class="xlabel rotate">Visit</br>Duration</div>
 					</div>
 				</div>
@@ -134,17 +140,59 @@
 	});	
 
 	$(document).ready(function () {
-		$('.bar_one').delay(1000).animate({
-			height: "+=66%"
-		}, 500);	
-		$('.bar_two').delay(1200).animate({
-			height: "+=57%"
-		}, 500);	
-		$('.bar_three').delay(1400).animate({
-			height: "+=40%"
+		$('.st_one').delay(500).animate({
+			opacity: "1"
 		}, 500);
-		$('.growth_num').delay(1200).animate({
+		$('.st_two').delay(700).animate({
+			opacity: "1"
+		}, 500);
+		$('.st_three').delay(900).animate({
 			opacity: "1"
 		}, 500);	
+		$('.st_four').delay(1100).animate({
+			opacity: "1"
+		}, 500);
+		$('.st_five').delay(1300).animate({
+			opacity: "1"
+		}, 500);
+
+		setTimeout(function(){
+			$('.bar_one').animate({
+				height: "+=66%"
+			}, 1000);	
+			$('.counter0').counter({});
+			$('.counter0').animate({
+				opacity: "1"
+			}, 500);
+			$('.style0').animate({
+				opacity: "1"
+			}, 500);
+		}, 1800);
+
+		setTimeout(function(){
+			$('.bar_two').animate({
+				height: "+=57%"
+			}, 1000);
+			$('.counter1').counter({});
+			$('.counter1').animate({
+				opacity: "1"
+			}, 500);
+			$('.style1').animate({
+				opacity: "1"
+			}, 500);
+		}, 2200);
+
+		setTimeout(function(){
+			$('.bar_three').animate({
+				height: "+=40%"
+			}, 1000);
+			$('.counter2').counter({});
+			$('.counter2').animate({
+				opacity: "1"
+			}, 500);
+			$('.style2').animate({
+				opacity: "1"
+			}, 500);
+		}, 2600);
 	});
 </script>
