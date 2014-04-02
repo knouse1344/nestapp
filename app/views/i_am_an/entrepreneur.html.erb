@@ -49,12 +49,25 @@
 
 
 		</div>
-		<div class="right">
-			<div class="title">MARKETING & GROWTH</div>
-			<div class="growth">
+		<div id="right">
+			<div class="title">GROWTH</div>
+			
+			<div id="personal_growth">
 				<div class="description">
-					Contractual web development from Allentown, PA, to Rochester, Baltimore, Philadelphia, and New York.
+					<p>Contractual web development from Allentown, PA, to Rochester, Baltimore, Philadelphia, and New York.</p>
+					<div class="graph_desc">
+						Freelancer for one year</br>
+						Steady earnings</br>
+						Entrepreneurially finding work
+					</div>
+					<div class="earnings_graph">
+
+
+					</div>
 				</div>
+			</div>
+
+			<div id="bfgrowth">
 				<div class="description">
 					<div class="graph_desc">
 						Created marketing campaign</br>
@@ -63,17 +76,14 @@
 					</div>
 					<div class="growth_graph">
 						<div class="placeholder"> </div>
-						<div class="bar bar_one"></div>
-						<div class="bar bar_two"></div>
-						<div class="bar bar_three"></div>
+						<div class="bar bar_one"><div class="growth_num">+ 66%</div></div>
+						<div class="bar bar_two"><div class="growth_num">+ 57%</div></div>
+						<div class="bar bar_three"><div class="growth_num">+ 40%</div></div>
+						<div class="xlabel rotate">Viewership</div><div class="xlabel rotate">Uniques</div><div class="xlabel rotate">Visit</br>Duration</div>
 					</div>
 				</div>
 			</div>
-			<div class="marketing">
-				<div class="title">MARKETING COLLATERAL</div>
-				<div class="sydney"> </div>
-				<div class="africa"> </div>
-			</div>
+
 		</div>
 		
 		<div class="clear"></div>
@@ -132,6 +142,9 @@
 		}, 500);	
 		$('.bar_three').delay(1400).animate({
 			height: "+=40%"
+		}, 500);
+		$('.growth_num').delay(1200).animate({
+			opacity: "1"
 		}, 500);	
 	});
 </script>

@@ -1226,25 +1226,47 @@
 		}
 	}
 
-	.right {
+	#right {
 		max-width: 46%;
 		float: right;
 
-		.growth {
+		.description {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 300;
+			font-size: 1.1em;
+			text-align: center;
+			display: inline-block;
+			padding-top: 1em;
+			padding-bottom: 1em;
+			width: 100%;
+			color: #666;
+		}
+
+		#personal_growth {
+			border: 1px solid;
+			width: 100%;
+			height: 400px;
+			
+			.graph_desc {
+				width: 45%;
+				margin: 0;
+				display: inline-block;
+			}
+			
+			.earnings_graph {
+				width: 45%;
+				height: 150px;
+				border-left: 4px solid #111;
+				border-bottom: 4px solid #111;
+				display: inline-block;
+				z-index: 10;
+			}
+		}
+
+		#bfgrowth {
 			margin-left:auto;
 			margin-right:auto;
-
-			.description {
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: 300;
-				font-size: 1.1em;
-				text-align: center;
-				display: inline-block;
-				padding-top: 1em;
-				padding-bottom: 1em;
-				width: 100%;
-				color: #666;
-			}
+			padding-bottom: 3em;
 
 			.graph_desc {
 				width: 45%;
@@ -1258,13 +1280,24 @@
 				border-left: 4px solid #111;
 				border-bottom: 4px solid #111;
 				display: inline-block;
+				z-index: 10;
 
 				.bar {
 					background: #63b7db;
 					width: 25%;
-					margin: 0 0 0 4%;
+					margin: 0 0 5px 4%;
 					padding: 0;
 					display: inline-block;
+					vertical-align: bottom;
+					z-index: 5;
+
+					.growth_num {
+						font-family: 'Source Sans Pro',sans-serif;
+						font-weight: 700;
+						padding-top: .5em;
+						color: #fff;
+						opacity: 0;
+					}
 				}
 
 				.placeholder {
@@ -1287,44 +1320,27 @@
 				.bar_three {
 					height: 0%;
 				}
+
+				.xlabel {
+					width: 32%;
+					float: left;
+					position: relative;
+					text-align: right;
+					bottom: -40px;
+					left: -6%;
+				}
+
+				.rotate {
+					/* Safari */
+					-webkit-transform: rotate(-45deg);
+					/* Firefox */
+					-moz-transform: rotate(-45deg);
+					/* IE */
+					-ms-transform: rotate(-45deg);
+					/* Opera */
+					-o-transform: rotate(-45deg);
+				}
 			}
-		}
-
-		.marketing {
-			width: 100%;
-			text-align: center;
-			display: inline-block;
-
-			.sydney {
-				background: url('/assets/marketing_sydney_gray.jpg') no-repeat;
-				background-size: contain;
-				display: inline-block;
-				height: 320px;
-				width: 45%;
-				margin-right: 3%;
-			}
-
-			.africa {
-				background: url('/assets/marketing_africa_gray.jpg') no-repeat;
-				background-size: contain;
-				display: inline-block;
-				height: 320px;
-				width: 45%;
-			}
-
-			.sydney:hover {
-				background: url('/assets/marketing_sydney.jpg') no-repeat;
-				background-size: contain;
-			}
-
-			.africa:hover {
-				background: url('/assets/marketing_africa.jpg') no-repeat;
-				background-size: contain;
-			}
-
-
-
-
 		}
 	}
 	
