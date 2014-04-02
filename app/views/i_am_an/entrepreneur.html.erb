@@ -27,7 +27,7 @@
 		<div class="left">
 			<div class="title">CLIENT RELATIONSHIPS</div>
 			<div class="relationships">
-				<div class="stars"><img width="250" src="/assets/business_stars.png" /></div>
+				<div class="stars"></div>
 				<div class="heading">Five star rating on Elance</div>
 
 				<div class="description">
@@ -51,72 +51,28 @@
 		</div>
 		<div class="right">
 			<div class="title">MARKETING & GROWTH</div>
-			<div class="client">
+			<div class="growth">
 				<div class="description">
 					Contractual web development from Allentown, PA, to Rochester, Baltimore, Philadelphia, and New York.
 				</div>
 				<div class="description">
-					Marketing and Web Development intern summer 2012 for Bluefields, a 500 Startups portfolio company.
-					<ul>
-						<li> Created marketing campaign </li>
-						<li> Redesigned SOTB, resulting in 60% traffic growth [image] </li>
-						<li> Actively involved in business pitching and investor reach-out </li>
-					</ul>
+					<div class="graph_desc">
+						Created marketing campaign</br>
+						Redesigned SOTB, resulting in 60% traffic growth [image]</br>
+						Actively involved in business pitching and investor reach-out
+					</div>
+					<div class="growth_graph">
+						<div class="placeholder"> </div>
+						<div class="bar bar_one"></div>
+						<div class="bar bar_two"></div>
+						<div class="bar bar_three"></div>
+					</div>
 				</div>
 			</div>
-			<div class="scorecard">
-				<div class="text">
-					DIGITAL MARKETING</br>
-					BRANDING & IDENTITY</br>
-					RESEARCH & ANALYTICS</br>
-					WRITTEN & VERBAL COM</br>
-					PRESENTING/PUBLIC SPEAKING</br>
-					MICROSOFT OFFICE TOOLS</br>
-				</div>
-				<div id="dots">
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-					</div>
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"></div>
-					</div>
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"></div>
-						<div class="outer"></div>
-					</div>
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"></div>
-					</div>
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"></div>
-						<div class="outer"></div>
-					</div>
-					<div class="circrow">
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-						<div class="outer"><div class="inner"></div></div>
-					</div>
-				</div>
+			<div class="marketing">
+				<div class="title">MARKETING COLLATERAL</div>
+				<div class="sydney"> </div>
+				<div class="africa"> </div>
 			</div>
 		</div>
 		
@@ -166,4 +122,16 @@
 	        $(elem).trigger('fade-cycle');
 	    }, index * 800);
 	});	
+
+	$(document).ready(function () {
+		$('.bar_one').delay(1000).animate({
+			height: "+=66%"
+		}, 500);	
+		$('.bar_two').delay(1200).animate({
+			height: "+=57%"
+		}, 500);	
+		$('.bar_three').delay(1400).animate({
+			height: "+=40%"
+		}, 500);	
+	});
 </script>
