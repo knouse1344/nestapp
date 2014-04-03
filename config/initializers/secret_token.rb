@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Nestapp::Application.config.secret_key_base = 'e567309908b26ccc5051b72865a9b5ee8ec950a4d7dee43ce9e2c6d33bab786f69d9b6e2934f7f91ddb89113ada6e22c1744a2908eee06f105cd01a971835448'
+Knouse::Application.config.secret_key_base = 'e567309908b26ccc5051b72865a9b5ee8ec950a4d7dee43ce9e2c6d33bab786f69d9b6e2934f7f91ddb89113ada6e22c1744a2908eee06f105cd01a971835448'

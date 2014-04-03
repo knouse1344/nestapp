@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Nestapp::Application.load_tasks
+Knouse::Application.load_tasks

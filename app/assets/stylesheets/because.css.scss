@@ -1241,6 +1241,13 @@
 		max-width: 46%;
 		float: right;
 
+		h3 {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 600;
+			color: #888;
+			font-size: 1.25em;
+		}
+
 		.description {
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: 300;
@@ -1263,13 +1270,28 @@
 				display: inline-block;
 			}
 
-			.earnings_graph {
-				width: 45%;
+			.earnings_graph_axes {
+				width: 275px;
 				height: 150px;
+				padding-left: 25px;
 				border-left: 4px solid #111;
 				border-bottom: 4px solid #111;
 				display: inline-block;
+				margin-top: 2em;
 				z-index: 10;
+
+				.earnings_outer {
+					height: 125px;
+					width: 0px;
+					overflow: hidden;
+
+					.earnings_data {
+						background: url('/assets/earnings_graph.png') no-repeat;
+						background-size: 100% 100%;
+						width: 250px;
+						height: 125px;
+					}
+				}
 			}
 		}
 
@@ -1285,7 +1307,7 @@
 			}
 
 			.growth_graph {
-				width: 45%;
+				width: 300px;
 				height: 150px;
 				border-left: 4px solid #111;
 				border-bottom: 4px solid #111;

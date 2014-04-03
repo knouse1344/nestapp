@@ -1,4 +1,4 @@
-Nestapp::Application.routes.draw do
+Knouse::Application.routes.draw do
 
   get "welcome/index"
 

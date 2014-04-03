@@ -60,15 +60,17 @@
 			
 			<div id="personal_growth">
 				<div class="description">
+					<h3> Responsive Technology, Freelance Web Development </h3>
 					<p>Contractual web development from Allentown, PA, to Rochester, Baltimore, Philadelphia, and New York.</p>
 					<div class="graph_desc">
 						Freelancer for one year</br>
 						Steady earnings</br>
 						Entrepreneurially finding work
 					</div>
-					<div class="earnings_graph">
-
-
+					<div class="earnings_graph_axes">
+						<div class="earnings_outer">
+							<div class="earnings_data"></div>						
+						</div>
 					</div>
 				</div>
 			</div>
@@ -157,6 +159,12 @@
 		}, 500);
 
 		setTimeout(function(){
+			$('.earnings_outer').animate({
+				width: "+=250px"
+			}, 1400);	
+		}, 1500);
+
+		setTimeout(function(){
 			$('.bar_one').animate({
 				height: "+=66%"
 			}, 1000);	
@@ -167,7 +175,7 @@
 			$('.style0').animate({
 				opacity: "1"
 			}, 500);
-		}, 1800);
+		}, 2600);
 
 		setTimeout(function(){
 			$('.bar_two').animate({
@@ -180,7 +188,7 @@
 			$('.style1').animate({
 				opacity: "1"
 			}, 500);
-		}, 2200);
+		}, 3000);
 
 		setTimeout(function(){
 			$('.bar_three').animate({
@@ -193,6 +201,6 @@
 			$('.style2').animate({
 				opacity: "1"
 			}, 500);
-		}, 2600);
+		},3000);
 	});
 </script>
