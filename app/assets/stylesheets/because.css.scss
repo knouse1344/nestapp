@@ -1157,26 +1157,36 @@
 }
 
 #biz_content {
-	width: 90%;
+	width: 95%;
 	padding-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
 
 	.title {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Oswald', sans-serif;
 		font-weight: 700;
 		color: #666;
-		font-size: 1.85em;
+		font-size: 1.95em;
 		text-align: center;
 		letter-spacing: 3px;
 		padding-top: 1.5em;
-		padding-bottom: 1em;	
+		padding-bottom: .5em;	
 		padding-left: 2em;
 		padding-right: 2em;
 	}
 
+	h3 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		color: #888;
+		text-align: center;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-size: 1.25em;
+	}
+
 	.left {
-		max-width: 46%;
+		max-width: 42%;
 		float: left;
 
 		.relationships {
@@ -1184,6 +1194,7 @@
 			.star_box {
 				width: 500px;
 				height: 80px;
+				margin-bottom: 20px;
 				margin-left: auto;
 				margin-right: auto;
 				text-align: center; 
@@ -1203,17 +1214,6 @@
 			.stars:hover {
 				background: url('/assets/business_stars_hover.png') no-repeat;
 				background-size: 100%;
-			}
-			
-			.heading {
-				font-family: 'Source Sans Pro', sans-serif;
-				font-size: 1.25em;
-				text-align: center;
-				font-weight: 400;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-				padding-top: 1em;
-				color: #888;
 			}
 			
 			.description {
@@ -1238,21 +1238,13 @@
 	}
 
 	#right {
-		max-width: 46%;
+		max-width: 55%;
 		float: right;
-
-		h3 {
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: 600;
-			color: #888;
-			font-size: 1.25em;
-		}
 
 		.description {
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: 300;
 			font-size: 1.1em;
-			text-align: center;
 			display: inline-block;
 			padding-top: 1em;
 			padding-bottom: 1em;
@@ -1260,13 +1252,13 @@
 			color: #666;
 		}
 
-		#personal_growth {
+		#responsive_growth {
 			width: 100%;
-			height: 400px;
 			
 			.graph_desc {
-				width: 45%;
-				margin: 0;
+				max-width: 40%;
+				margin: 0 10% 0 0;
+				font-size: .9em;
 				display: inline-block;
 			}
 
@@ -1277,7 +1269,8 @@
 				border-left: 4px solid #111;
 				border-bottom: 4px solid #111;
 				display: inline-block;
-				margin-top: 2em;
+				margin-top: 10px;
+				vertical-align: top;
 				z-index: 10;
 
 				.earnings_outer {
@@ -1298,11 +1291,12 @@
 		#bfgrowth {
 			margin-left:auto;
 			margin-right:auto;
-			padding-bottom: 3em;
+			padding: 2em 0 3em 0;
 
 			.graph_desc {
-				width: 45%;
-				margin: 0;
+				max-width: 40%;
+				margin: 0 10% 0 0;
+				font-size: .9em;
 				display: inline-block;
 			}
 
@@ -1312,6 +1306,8 @@
 				border-left: 4px solid #111;
 				border-bottom: 4px solid #111;
 				display: inline-block;
+				vertical-align: top;
+				margin-top: 10px;
 				z-index: 10;
 
 				.bar {
@@ -1319,6 +1315,7 @@
 					width: 25%;
 					margin: 0 0 5px 4%;
 					padding: 0;
+					text-align: center;
 					display: inline-block;
 					vertical-align: bottom;
 					z-index: 5;
@@ -1344,12 +1341,11 @@
 					width: 1px;
 					height: 100%;
 					position: relative;
-					left: -10px;
 					display: inline-block;
 				}
 
 				.bar_one {
-					margin-left: -10px;
+					margin-left: 15px;
 					height: 0%;
 				}
 
