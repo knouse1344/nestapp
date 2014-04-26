@@ -861,11 +861,20 @@
 
 	.container {
 
-		img {
+		.toolbox_image {
 			width: 100%;
+			position: relative;
 			max-width: 1900px;
-			float: right;
-			margin-right: 25%;
+			left: -100%;
+			-webkit-transition: all .5s;
+	        -moz-transition: all .5s;
+	        -ms-transition: all .5s;
+	        -o-transition: all .5s;
+	        transition: all .5s;
+		}
+
+		.toolbox_trigger {
+			width: 50%;
 		}
 
 	}

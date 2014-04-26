@@ -30,7 +30,7 @@
 		<div class="container">
 			<img class="products" src="/assets/design_products.jpg" />
 			<div class="description">
-				These products were the feature of my senior photography thesis during undergraduate study.  The project was titled 'Dissection' and showcased each item split open to reveal its inner workings.  For the three products I chose a watch concept I originated, a Nikon AF-S Nikkor Lens, and a Nest Thermostat.  Each product was individually created in CAD and finished in Photoshop.
+				These products were a senior photography thesis feature during undergraduate study.  The project was titled 'Dissection' and showcased each item split open to reveal its inner workings.  For the three products I chose a watch concept I originated, a Nikon AF-S Nikkor Lens, and a Nest Thermostat.  Each product was individually created in CAD and finished in Photoshop.
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@
 	<div id="engineering">
 		<img class="engineering_photo" src="/assets/design_eng_photos.jpg" />
 		<div class="eng_desc">
-			Great design is a hallmark of great engineering.  The above images were design concepts for my senior mechanical engineering project.  The objective was to design and fabricate a polishing machine for use in the Laboratory for Laser Energetics at the University of Rochester.  This project was unique as the final product would come in contact with nuclear fusion testing equipment.
+			Great design is a hallmark of great engineering.  The above images were concepts for the UR senior mechanical engineering project.  The objective was to design and fabricate a polishing machine for use in the Laboratory for Laser Energetics at the University of Rochester.  This project was unique as the final product would come in contact with nuclear fusion testing equipment.
 		</div>
 	</div>
 	<div class="subtitle_bar"><div class="subtitle">ANALYTICALLY FOCUSED</div></div>
@@ -52,13 +52,13 @@
 			<div class="design_circle six"> </div>
 			<div class="clear"> </div>
 		<div class="data_desc">
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			The above graphic is a real-time representation of Google Analytics data for one of my client sites, drawing not only a wide range of U.S. viewers, but an international audience, too. The graphic displays viewer origin as well as behavior flow throughout the first several stages of interaction.  Today, customer data has secured a more crucial role in engineering and technological development than ever before.  As a result, I construct web products with numerical advantage at my side.  
 		</div>
 	</div>
-	<div class="subtitle_bar"><div class="subtitle">DESIGN TOOLBOX</div></div>
+	<div class="subtitle_bar toolbox_waypoint"><div class="subtitle">DESIGN TOOLBOX</div></div>
 	<div id="skillz">
 		<div class="container">
-			<img src="/assets/design_skills.png" />
+			<img class="toolbox_image" src="/assets/design_skills.png" />
 			<div class="clear"> </div>
 		</div>
 	</div>
@@ -88,5 +88,9 @@
 	    setTimeout(function() {
 	        $(elem).trigger('fade-cycle');
 	    }, index * 666);
+	});
+
+	$('.toolbox_waypoint').waypoint(function() {
+	  $('.toolbox_image').css("left", "-15%");
 	});
 </script>
