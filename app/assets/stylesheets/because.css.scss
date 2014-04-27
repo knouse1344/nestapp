@@ -1054,6 +1054,7 @@
 	height: 252px;
 	position: relative;
 	overflow-x: hidden;
+	z-index: -1;
 
 	.biz_circle {
 		background: #aaa;
