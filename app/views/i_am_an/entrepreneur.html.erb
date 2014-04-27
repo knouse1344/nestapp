@@ -18,10 +18,11 @@
 		<div class="biz_circle eight"> </div>
 		<div class="biz2_circle nine"> </div>
 		<div class="biz3_circle ten"> </div>
+		<div class="ent_image"> </div>
+		<div id="biz_header"><h1>ENTREPRENEURSHIP</h1></div>
 	</div>
 
-	<div class="ent_image"> </div>
-	<div id="biz_header"><h1>ENTREPRENEURSHIP</h1></div>
+
 
 	<div id="biz_content">
 		<div class="left">
@@ -68,7 +69,15 @@
 						<div class="earnings_outer">
 							<div class="earnings_data"></div>						
 						</div>
-					</div>
+						<div class="earnings_xlabel">
+							Time
+						</div>
+						<div class="earnings_ylabel">
+							Earnings
+						</div>
+					</div>				
+					<div class="clear"></div>
+
 				</div>
 			</div>
 
@@ -89,7 +98,7 @@
 			</div>
 
 		</div>
-		
+
 		<div class="clear"></div>
 	</div>
 </div>
@@ -148,40 +157,46 @@
 			$('.bar_one').animate({
 				height: "+=66%"
 			}, 1000);	
-			$('.counter0').counter({});
 			$('.counter0').animate({
 				opacity: "1"
 			}, 500);
 			$('.style0').animate({
 				opacity: "1"
 			}, 500);
-		}, 1000);
+			setTimeout(function(){
+				$('.counter0').counter({});
+			}, 300);
+		}, 2000);
 
 		setTimeout(function(){
 			$('.bar_two').animate({
 				height: "+=57%"
 			}, 1000);
-			$('.counter1').counter({});
 			$('.counter1').animate({
 				opacity: "1"
 			}, 500);
 			$('.style1').animate({
 				opacity: "1"
 			}, 500);
-		}, 1500);
+			setTimeout(function(){
+				$('.counter1').counter({});
+			}, 300);
+		}, 2700);
 
 		setTimeout(function(){
 			$('.bar_three').animate({
 				height: "+=40%"
 			}, 1000);
-			$('.counter2').counter({});
 			$('.counter2').animate({
 				opacity: "1"
 			}, 500);
 			$('.style2').animate({
 				opacity: "1"
 			}, 500);
-		},2000);
+			setTimeout(function(){
+				$('.counter2').counter({});	
+			}, 300);			
+		},3400);
 	},
 	{
 		triggerOnce: true

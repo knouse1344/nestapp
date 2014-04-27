@@ -1051,6 +1051,9 @@
 
 
 #header_circles {
+	height: 252px;
+	position: relative;
+	overflow-x: hidden;
 
 	.biz_circle {
 		background: #aaa;
@@ -1151,31 +1154,33 @@
 		border-radius: 30px;
 		left: 1102px;
 		top: 167px;
-	}						
-}
-
-.ent_image {
-	width: 1200px;
-	height: 252px;
-	position: absolute;
-	margin-left: 65px;
-	margin-top: -20px;
-	background: url("/assets/business_header.png") no-repeat;
-	z-index: -1;
-}
-#biz_header {
-	width: 100%;
-
-	h1 {
-		padding-top: 1em;
-		font-size: 3em;
-		font-weight: bold;
-		z-index: 15;
 	}
+
+	.ent_image {
+		width: 1200px;
+		height: 252px;
+		position: absolute;
+		margin-left: 65px;
+		margin-top: -20px;
+		background: url("/assets/business_header.png") no-repeat;
+		z-index: -1;
+	}
+
+	#biz_header {
+		width: 100%;
+
+		h1 {
+			padding-top: 1em;
+			font-size: 3em;
+			font-weight: bold;
+			z-index: 15;
+		}
+	}							
 }
+
 
 #biz_content {
-	width: 95%;
+	width: 60%;
 	padding-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
@@ -1204,10 +1209,9 @@
 	}
 
 	.left {
-		width: 70%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 100px;
 		margin-bottom: 100px;
 
 		.relationships {
@@ -1259,7 +1263,7 @@
 	}
 
 	#right {
-		width: 70%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 200px;
@@ -1284,12 +1288,12 @@
 			
 			.graph_desc {
 				max-width: 40%;
-				margin: 0 10% 0 0;
 				font-size: .9em;
 				display: inline-block;
 			}
 
 			.earnings_graph_axes {
+				float: right;
 				width: 275px;
 				height: 150px;
 				padding-left: 25px;
@@ -1313,6 +1317,31 @@
 					}
 				}
 			}
+
+			.earnings_ylabel {
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				position: relative;
+				top: -175px;
+				left: -185px;
+				/* Safari */
+				-webkit-transform: rotate(-90deg);
+				/* Firefox */
+				-moz-transform: rotate(-90deg);
+				/* IE */
+				-ms-transform: rotate(-90deg);
+				/* Opera */
+				-o-transform: rotate(-90deg);
+			}	
+
+			.earnings_xlabel {
+				text-align: right;
+				position: relative;
+				top: 35px;
+				left: -125px;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+			}			
 		}
 
 		#bfgrowth {
@@ -1322,12 +1351,12 @@
 
 			.graph_desc {
 				max-width: 40%;
-				margin: 0 10% 0 0;
 				font-size: .9em;
 				display: inline-block;
 			}
 
 			.growth_graph {
+				float: right;
 				width: 300px;
 				height: 150px;
 				border-left: 4px solid #111;
