@@ -905,7 +905,7 @@
 
 	.container {
 		width: 100%;
-		height: 700px;
+		height: 800px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
@@ -922,14 +922,23 @@
 			width: 497px;
 			height: 232px;
 			margin-top: 200px;
+			margin-bottom: 200px;
 		}
+	}
 
-		.fini_button {
-			width: 200px;
-			cursor: pointer;
-		}
+	.fini_button {
+		opacity: .45;
+		width: 100px;
+		cursor: pointer;
+		-webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+	}
 
-
+	.fini_button:hover {
+		opacity: 1;
 	}
 }
 
@@ -1195,8 +1204,11 @@
 	}
 
 	.left {
-		max-width: 42%;
-		float: left;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+		margin-bottom: 100px;
 
 		.relationships {
 
@@ -1247,8 +1259,14 @@
 	}
 
 	#right {
-		max-width: 55%;
-		float: right;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 200px;
+
+		h3 {
+			padding-bottom: 40px;
+		}
 
 		.description {
 			font-family: 'Source Sans Pro', sans-serif;
@@ -1290,7 +1308,7 @@
 					.earnings_data {
 						background: url('/assets/earnings_graph.png') no-repeat;
 						background-size: 100% 100%;
-						width: 250px;
+						width: 275px;
 						height: 125px;
 					}
 				}

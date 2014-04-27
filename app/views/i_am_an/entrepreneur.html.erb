@@ -41,7 +41,7 @@
 					<span style="font-style: italic;">“Bryan was very professional, and I appreciated his open communication throughout the course of the project. He was very receptive to feedback, and using my vague guidelines was able to create a very cool concept and execute it perfectly. I'll definitely be hiring him again!”</br>
 					<div class="center">- CIRadar, Competitive Intelligence</div></span>
 				</div>
-				<div class="description">
+				<div class="description desc2">
 					<div class="intro">Feedback from 1/12/2014:</div>
 					<span style="font-style: italic;">Bryan did an excellent job. He was flexible, understood what I needed and delivered extremely good results. I'd recommend him to anyone.”</br>
 					<div class="center">- Byrne Entertainment</div></span>
@@ -137,6 +137,57 @@
 	    }, index * 800);
 	});	
 
+	$('.desc2').waypoint(function() {
+	    setTimeout(function(){
+			$('.earnings_outer').animate({
+				width: "+=100%"
+			}, 1400);	
+		}, 500);
+
+		setTimeout(function(){
+			$('.bar_one').animate({
+				height: "+=66%"
+			}, 1000);	
+			$('.counter0').counter({});
+			$('.counter0').animate({
+				opacity: "1"
+			}, 500);
+			$('.style0').animate({
+				opacity: "1"
+			}, 500);
+		}, 1000);
+
+		setTimeout(function(){
+			$('.bar_two').animate({
+				height: "+=57%"
+			}, 1000);
+			$('.counter1').counter({});
+			$('.counter1').animate({
+				opacity: "1"
+			}, 500);
+			$('.style1').animate({
+				opacity: "1"
+			}, 500);
+		}, 1500);
+
+		setTimeout(function(){
+			$('.bar_three').animate({
+				height: "+=40%"
+			}, 1000);
+			$('.counter2').counter({});
+			$('.counter2').animate({
+				opacity: "1"
+			}, 500);
+			$('.style2').animate({
+				opacity: "1"
+			}, 500);
+		},2000);
+	},
+	{
+		triggerOnce: true
+	});
+
+
 	$(document).ready(function () {
 		$('.st_one').delay(500).animate({
 			opacity: "1"
@@ -153,50 +204,5 @@
 		$('.st_five').delay(1300).animate({
 			opacity: "1"
 		}, 500);
-
-		setTimeout(function(){
-			$('.earnings_outer').animate({
-				width: "+=250px"
-			}, 1400);	
-		}, 1500);
-
-		setTimeout(function(){
-			$('.bar_one').animate({
-				height: "+=66%"
-			}, 1000);	
-			$('.counter0').counter({});
-			$('.counter0').animate({
-				opacity: "1"
-			}, 500);
-			$('.style0').animate({
-				opacity: "1"
-			}, 500);
-		}, 2600);
-
-		setTimeout(function(){
-			$('.bar_two').animate({
-				height: "+=57%"
-			}, 1000);
-			$('.counter1').counter({});
-			$('.counter1').animate({
-				opacity: "1"
-			}, 500);
-			$('.style1').animate({
-				opacity: "1"
-			}, 500);
-		}, 3000);
-
-		setTimeout(function(){
-			$('.bar_three').animate({
-				height: "+=40%"
-			}, 1000);
-			$('.counter2').counter({});
-			$('.counter2').animate({
-				opacity: "1"
-			}, 500);
-			$('.style2').animate({
-				opacity: "1"
-			}, 500);
-		},3000);
 	});
 </script>
