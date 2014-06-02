@@ -1181,10 +1181,138 @@
 	}							
 }
 
+@media (min-width: 1200px) {
+	#biz_content {
+		width: 800px;
+
+		.star_box {
+			width: 500px;
+
+			.star_img {
+				background: url('/assets/business_star.png') no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 75px;
+				height: 75px;
+				margin-left: 10px;
+				margin-right: 10px;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+	#biz_content {
+		width: 700px;
+
+		.star_box {
+			width: 500px;
+
+			.star_img {
+				background: url('/assets/business_star.png') no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 75px;
+				height: 75px;
+				margin-left: 10px;
+				margin-right: 10px;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 650px) and (max-width: 899px) {
+	#biz_content {
+		width: 600px;
+
+		.star_box {
+			width: 500px;
+
+			.star_img {
+				background: url('/assets/business_star.png') no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 75px;
+				height: 75px;
+				margin-left: 10px;
+				margin-right: 10px;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 649px) {
+
+	#biz_content {
+		width: 95%;
+
+		.relationships {
+
+			.star_box {
+				width: 90%;
+
+				.star_img {
+					background: url('/assets/business_star.png') no-repeat;
+					background-size: contain;
+					display: inline-block;
+					height:50px;
+					width: 50px;
+					margin-left: 1%;
+					margin-right: 1%;
+					opacity: 0;
+				}
+			}
+		}
+
+		#responsive_growth {
+			padding-bottom: 60px;
+
+			.description {
+				text-align: center;
+
+				.graph_desc {
+					margin: auto;
+					display: block;
+					width:auto;
+				}
+
+				.earnings_graph_axes {
+					float: none;
+					margin-top: 50px;
+
+					.earnings_ylabel {
+						top: -90px;
+					}
+				}
+			}
+		}
+
+		#bfgrowth {
+
+			.description {
+				text-align: center;
+
+				.graph_desc {
+					width: auto;
+					margin:auto;
+					display: block;
+				}
+
+				.growth_graph {
+					float: none;
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+}
 
 #biz_content {
-	width: 60%;
 	padding-top: 1em;
+	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -1205,283 +1333,212 @@
 		font-family: 'Oswald', sans-serif;
 		font-weight: 400;
 		color: #888;
+		margin-top: 0;
 		text-align: center;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		font-size: 1.25em;
 	}
 
-	.left {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 100px;
+	.relationships {
+		padding-bottom: 60px;
 
-		.relationships {
-
-			.star_box {
-				width: 500px;
-				height: 80px;
-				margin-bottom: 20px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center; 
-
-				.star_img {
-					background: url('/assets/business_star.png') no-repeat;
-					background-size: contain;
-					display: inline-block;
-					width: 75px;
-					height: 75px;
-					margin-left: 10px;
-					margin-right: 10px;
-					opacity: 0;
-				}
-			}
-
-			.stars:hover {
-				background: url('/assets/business_stars_hover.png') no-repeat;
-				background-size: 100%;
-			}
-			
-			.description {
-				font-family: 'Source Sans Pro', sans-serif;
-				font-weight: 300;
-				font-size: 1.1em;
-				color: #666;
-				padding-top: 3em;
-				margin-left: auto;
-				margin-right: auto;
-
-				.intro {
-					padding-bottom: .5em;
-					font-weight: 400;
-				}
-
-				.center {
-					text-align: center;
-				}
-			}
-		}
-	}
-
-	#right {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		padding-bottom: 200px;
-
-		h3 {
-			padding-bottom: 40px;
+		.star_box {
+			height: 80px;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center; 
 		}
 
+		.stars:hover {
+			background: url('/assets/business_stars_hover.png') no-repeat;
+			background-size: 100%;
+		}
+		
 		.description {
 			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: 300;
 			font-size: 1.1em;
-			display: inline-block;
-			padding-top: 1em;
-			padding-bottom: 1em;
-			width: 100%;
-			color: #666;
-		}
+			color: #333;
+			padding-top: 3em;
+			margin-left: auto;
+			margin-right: auto;
 
-		#responsive_growth {
-			width: 100%;
-			
-			.graph_desc {
-				max-width: 40%;
-				font-size: .9em;
-				display: inline-block;
+			.intro {
+				padding-bottom: .5em;
+				font-weight: 400;
 			}
 
-			.earnings_graph_axes {
-				float: right;
-				width: 275px;
-				height: 150px;
-				padding-left: 25px;
-				border-left: 4px solid #111;
-				border-bottom: 4px solid #111;
-				display: inline-block;
-				margin-top: 10px;
-				vertical-align: top;
-				z-index: 10;
-
-				.earnings_outer {
-					height: 125px;
-					width: 0px;
-					overflow: hidden;
-
-					.earnings_data {
-						background: url('/assets/earnings_graph.png') no-repeat;
-						background-size: 100% 100%;
-						width: 275px;
-						height: 125px;
-					}
-				}
-			}
-
-			.earnings_ylabel {
-				letter-spacing: 3px;
-				text-transform: uppercase;
-				position: relative;
-				top: -175px;
-				left: -185px;
-				/* Safari */
-				-webkit-transform: rotate(-90deg);
-				/* Firefox */
-				-moz-transform: rotate(-90deg);
-				/* IE */
-				-ms-transform: rotate(-90deg);
-				/* Opera */
-				-o-transform: rotate(-90deg);
-			}	
-
-			.earnings_xlabel {
-				text-align: right;
-				position: relative;
-				top: 35px;
-				left: -125px;
-				letter-spacing: 3px;
-				text-transform: uppercase;
-			}			
-		}
-
-		#bfgrowth {
-			margin-left:auto;
-			margin-right:auto;
-			padding: 2em 0 3em 0;
-
-			.graph_desc {
-				max-width: 40%;
-				font-size: .9em;
-				display: inline-block;
-			}
-
-			.growth_graph {
-				float: right;
-				width: 300px;
-				height: 150px;
-				border-left: 4px solid #111;
-				border-bottom: 4px solid #111;
-				display: inline-block;
-				vertical-align: top;
-				margin-top: 10px;
-				z-index: 10;
-
-				.bar {
-					background: #63b7db;
-					width: 25%;
-					margin: 0 0 5px 4%;
-					padding: 0;
-					text-align: center;
-					display: inline-block;
-					vertical-align: bottom;
-					z-index: 5;
-
-					.counter {
-						font-family: 'Source Sans Pro',sans-serif;
-						font-weight: 700;
-						padding-top: .5em;
-						color: #fff;
-						opacity: 0;
-					}
-
-					.count_style {
-						font-family: 'Source Sans Pro',sans-serif;
-						font-weight: 700;
-						padding-top: .5em;
-						color: #fff;
-						opacity: 0;
-					}
-				}
-
-				.placeholder {
-					width: 1px;
-					height: 100%;
-					position: relative;
-					display: inline-block;
-				}
-
-				.bar_one {
-					margin-left: 15px;
-					height: 0%;
-				}
-
-				.bar_two {
-					height: 0%;
-				}
-
-				.bar_three {
-					height: 0%;
-				}
-
-				.xlabel {
-					width: 32%;
-					float: left;
-					position: relative;
-					text-align: right;
-					bottom: -40px;
-					left: -6%;
-				}
-
-				.rotate {
-					/* Safari */
-					-webkit-transform: rotate(-45deg);
-					/* Firefox */
-					-moz-transform: rotate(-45deg);
-					/* IE */
-					-ms-transform: rotate(-45deg);
-					/* Opera */
-					-o-transform: rotate(-45deg);
-				}
+			.center {
+				text-align: center;
 			}
 		}
 	}
-	
-	.scorecard {
-		width: 100%;
-		text-align: center;
-		margin-top: 3.5em;
-		color: #666;
 
-		.text {
-			font-family: 'Source Sans Pro',sans-serif;
-			font-weight:300;
-			font-size: 1.15em;
-			line-height: 1.75em;
-			text-transform: uppercase;
-			text-align: right;
+	h3 {
+		padding-bottom: 40px;
+	}
+
+	.description {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 300;
+		font-size: 1.1em;
+		display: inline-block;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		width: 100%;
+		color: #333;
+	}
+
+	#responsive_growth {
+		width: 100%;
+		
+		.graph_desc {
+			width: 40%;
+			font-size: .9em;
 			display: inline-block;
 		}
 
-		#dots {
-			margin-left: .5em;
+		.earnings_graph_axes {
+			float: right;
+			width: 275px;
+			height: 150px;
+			padding-left: 25px;
+			border-left: 4px solid #111;
+			border-bottom: 4px solid #111;
+			display: inline-block;
+			margin-top: 10px;
+			vertical-align: top;
+			z-index: 10;
+
+			.earnings_outer {
+				height: 125px;
+				width: 0px;
+				overflow: hidden;
+
+				.earnings_data {
+					background: url('/assets/earnings_graph.png') no-repeat;
+					background-size: 100% 100%;
+					width: 275px;
+					height: 125px;
+				}
+			}
+		}
+
+		.earnings_ylabel {
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			position: relative;
+			top: -175px;
+			left: -185px;
+			/* Safari */
+			-webkit-transform: rotate(-90deg);
+			/* Firefox */
+			-moz-transform: rotate(-90deg);
+			/* IE */
+			-ms-transform: rotate(-90deg);
+			/* Opera */
+			-o-transform: rotate(-90deg);
+		}	
+
+		.earnings_xlabel {
+			text-align: right;
+			position: relative;
+			top: 35px;
+			left: -125px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+		}			
+	}
+
+	#bfgrowth {
+		margin-left:auto;
+		margin-right:auto;
+		padding: 2em 0 3em 0;
+
+		.graph_desc {
+			width: 40%;
+			font-size: .9em;
+			display: inline-block;
+		}
+
+		.growth_graph {
+			float: right;
+			width: 300px;
+			height: 150px;
+			border-left: 4px solid #111;
+			border-bottom: 4px solid #111;
 			display: inline-block;
 			vertical-align: top;
+			margin-top: 10px;
+			z-index: 10;
 
-			.circrow {
-				padding-top: .5em;
-				padding-bottom: .18em;
+			.bar {
+				background: #63b7db;
+				width: 25%;
+				margin: 0 0 5px 4%;
+				padding: 0;
+				text-align: center;
+				display: inline-block;
+				vertical-align: bottom;
+				z-index: 5;
 
-				.outer {
-					width: 12px;
-					height: 12px;
-					border-radius: 150px;
-					margin-right: .25em;
-					display: inline-block;
-					border: 2px solid #777;
+				.counter {
+					font-family: 'Source Sans Pro',sans-serif;
+					font-weight: 700;
+					padding-top: .5em;
+					color: #fff;
+					opacity: 0;
 				}
 
-				.inner {
-					width: 8px;
-					height: 8px;
-					border-radius: 60px;
-					background: #333;
-					margin-top: .125em;
-					margin-left: auto;
-					margin-right: auto;
+				.count_style {
+					font-family: 'Source Sans Pro',sans-serif;
+					font-weight: 700;
+					padding-top: .5em;
+					color: #fff;
+					opacity: 0;
 				}
+			}
+
+			.placeholder {
+				width: 1px;
+				height: 100%;
+				position: relative;
+				display: inline-block;
+			}
+
+			.bar_one {
+				margin-left: 15px;
+				height: 0%;
+			}
+
+			.bar_two {
+				height: 0%;
+			}
+
+			.bar_three {
+				height: 0%;
+			}
+
+			.xlabel {
+				width: 32%;
+				float: left;
+				position: relative;
+				text-align: right;
+				bottom: -40px;
+				left: -6%;
+			}
+
+			.rotate {
+				/* Safari */
+				-webkit-transform: rotate(-45deg);
+				/* Firefox */
+				-moz-transform: rotate(-45deg);
+				/* IE */
+				-ms-transform: rotate(-45deg);
+				/* Opera */
+				-o-transform: rotate(-45deg);
 			}
 		}
 	}
