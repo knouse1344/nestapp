@@ -3,8 +3,76 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+@media (min-width: 1201px) {
+	#resume {
+		width: 60%;
+
+		#target, #reads, #work, #education {
+			width: 85%;
+			float: right;
+		}
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+	#resume {
+		width: 720px;
+		padding-bottom: 80px;
+	
+		#target, #reads, #work, #education {
+			width: 85%;
+			float: right;
+		}
+
+		.bottom {
+
+			#awards {
+				width: 85%;
+				margin-bottom: 4em;
+			}
+
+			#resume_skills {
+				width: 85%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	
+	#resume {
+		width: 600px;
+		padding-bottom: 80px;
+		
+		#target, #reads, #work, #education {
+			width: 80%;
+			float: right;
+		}
+
+		h1 .date {
+			font-size: .85em;
+			display: block;
+			float: none !important;
+		}	
+
+		.bottom {
+
+			#awards {
+				width: 80%;
+				margin-bottom: 4em;
+			}
+
+			#resume_skills {
+				width: 80%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
 #resume {
-	width: 60%;
 	padding: 5em 0 5em 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -135,7 +203,6 @@
 	}
 
 	.resume_skills {
-		float: left;
 		background: url('/assets/Resume_hammer_icon_small.png');
 		width: 80px;
 		height: 80px;
@@ -143,25 +210,21 @@
 	}
 
 	.awards {
-		display: inline-block;
-		float: right;
 		background: url('/assets/Resume_star_icon_small.png');
 		width: 80px;
 		height: 76px;
-		margin-right: 7%;
+		margin-right: 8%;
 
 	}
 
 	#target, #reads, #work, #education {
-		width: 85%;
-		float: right;
 		margin-bottom: 4em;
 
 		h1 {
 			color: #c12c13;
 			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1.25em;
-			font-weight: 700;
+			font-size: 1.15em;
+			font-weight: 600;
 			margin: 0 0 .5em 0;
 
 			.date {
@@ -180,14 +243,16 @@
 	}
 
 	#resume_skills {
-		display: inline-block;
+		float:right;
+		width: 40%;
+		margin-right: 5%;
 		vertical-align: top;
 	}
 
 	#awards {
-		display: inline-block;
+		float: right;
+		width: 40%;
 		vertical-align: top;
-		float:right;
 	}
 
 	.bottom {
