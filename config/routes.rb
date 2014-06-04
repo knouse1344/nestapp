@@ -1,6 +1,9 @@
 Knouse::Application.routes.draw do
 
   get "welcome/index"
+  get "welcome/engineering"
+  get "welcome/entrepreneurship"
+  get "welcome/design"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,10 +11,6 @@ Knouse::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'welcome#index'
-
-  get 'i_am_a/designer'
-  get 'i_am_an/entrepreneur'
-  get 'i_am_an/engineer'
   get 'documents/resume'
   
   # Example of regular route:
