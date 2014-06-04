@@ -84,12 +84,13 @@
 	padding-bottom: 4em;
 
 	h1 {
-		font-size: 3em;
+		padding: 60px 0 20px 0;
+		font-size: 40px;
 		font-weight: bold;
 	}
 
 	img {
-		top: -30px;
+		top: -20px;
 		right: 0;
 		opacity: .035;
 		width: 100%;
@@ -208,7 +209,7 @@
 		width: 100%;
 		text-align: left;
 		border-bottom: 1px dotted #888;
-		font-size: 2.5em;
+		font-size: 30px;
 		letter-spacing: 2px;
 		font-weight: 900;
 		font-style: italic;
@@ -217,41 +218,54 @@
 
 	.description {
 		width: 27%;
+		padding: 40px;
+		max-height: 420px;
 		min-width: 325px;
-		height: 300px;
-		float: left;
-		margin-right: 3%;
+		left: 3%;
+		position: relative;
+		z-index: 50;
+		background: rgba(0,0,0,.85);
+		border: 2px solid #999;
+		margin-top: 40px;
 
 		p  {
 			padding: 0px 0 10px 0;
 			margin: 0;
 			font-family: 'Source Sans Pro', sans-serif;
-			font-size: 1em;
+			font-size: 14px;
 			line-height: 1.6em;
-			font-weight: 300;
+			font-weight: 400;
 			color: #eee;
 		}
 	}
 
 	.digital {
-		width: 95%;
+		width: 100%;
 		height: 100%;
-		max-width: 1800px;
 		position: absolute;
 		vertical-align: top;
-		left: 1%;
+		left: 0;
+		overflow: hidden;
 
 		.digi {
-			padding-top: 6em;
-			width: 50%;
+			width: 35%;
+			padding: 40px;
+			max-height: 420px;
+			right: 7%;
 			position: absolute;
-			right: 15%;
-			z-index: 10;
+			z-index: 50;
+			background: rgba(0,0,0,.85);
+			border: 2px solid #999;
+			margin-top: 80px;
 
 			p {
-				width: 100%;
-				float: left;
-				z-index: 10;
+				padding: 0px 0 10px 0;
+				margin: 0;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 14px;
+				line-height: 1.6em;
+				font-weight: 400;
+				color: #eee;
 
 				a {
 					text-decoration: none;
@@ -292,84 +306,69 @@
 
 	.concepts {
 		width: 95%;
-		padding-top: 3em;
-		max-width: 1800px;
+		height:100%;
+		padding-left: 5%;
 		position: absolute;
 		vertical-align: top;
-		left: 105%;
+		left: 100%;
+		overflow: hidden;
 
 		.concepts_one {
-			padding-top:13px;
-			max-width: 800px;
-			width: 29.5%;
-			float: left;
-			margin-right: 2%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
 		}
-
-		.concepts_two {
-			padding-top:13px;
-			max-width: 800px;
-			width: 36.5%;
-			float: left;
-			margin-right: 2%;
-		}		
 	}
 
 	.design {
 		width: 95%;
-		padding-top: 3em;
+		height: 100%;
+		padding-left: 5%;
 		position: absolute;
-		min-width: 800px;
-		max-width: 1800px;
 		vertical-align: top;
-		left: 205%;
+		left: 200%;
+		overflow: hidden;
 
 		.design_one {
-			padding-top: 13px;
-			width: 31.2%;
-			float: left;
-			margin-right: 2%;
-		}
-
-		.design_two {
-			padding-top: 13px;
-			width: 34.8%;
-			float: left;
-			margin-right: 2%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
 		}
 	}
 
 	.testing {
 		width: 95%;
-		min-width: 800px;
-		max-width: 1800px;
-		padding-top: 3em;
+		height: 100%;
+		padding-left: 5%;
 		position: absolute;
 		vertical-align: top;
-		left: 304%;
+		left: 300%;
+		overflow: hidden;
 
 		img {
-			padding-top: 13px;
-			margin-right: 2%;
-			float: left;
-			width: 33%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;			
 		}
 	}
 
 	.construction {
 		width: 95%;
-		min-width: 800px;
-		max-width: 1650px;
-		padding-top: 3em;
+		height: 100%;
+		padding-left: 5%;
 		position: absolute;
 		vertical-align: top;
-		left: 407%;
+		left: 400%;
+		overflow: hidden;
 
 		img {
-			padding-top: 13px;
-			float: left;
-			margin-right: 4%;
-			width: 31%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
 		}
 	}
 }
