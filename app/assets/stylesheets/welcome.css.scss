@@ -12,30 +12,10 @@
 	width: 100%;
 	height: 100%;
 
-	h1 {
-		margin:0;
-		padding: 1em 0 0em 0;
-		text-align: center;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
-		color: #666;
-	}
-
-	h2 {
-		margin:0;
-		padding: 0em 0 2em 0;
-		text-align: center;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-		color: #666;
-	}
-
 	#graphic {
-		position: absolute;
+		margin: 60px auto 0 auto;
 		width: 692px;
 		height: 596px;
-		margin-left: -350px;
-		left: 50%;
 
 		map {
 			display: block;
@@ -53,37 +33,10 @@
 			z-index: 0;
 		}
 	}
+}
 
-	.links {
-		text-align: center;
-		padding-bottom: 40px;
-		margin: auto;
-		width: 90%;
-		margin-top: 700px;
-		color: #888;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 400;
-		font-size: 1.2em;
-
-		a {
-			text-decoration: none;
-			color: #666;
-			-webkit-transition: all .15s;
-	        -moz-transition: all .15s;
-	        -ms-transition: all .15s;
-	        -o-transition: all .15s;
-	        transition: all .15s;
-		}
-
-		a:hover {
-			color: #aaa;
-		}
-
-		.divider {
-			padding-left: 3.5em;
-			padding-right: 3.5em;
-		}
-	}
+#tri_top:hover .engineering-title {
+	display: block;
 }
 
 #bg {
@@ -99,15 +52,4 @@
 	background: -ms-linear-gradient(top,  #fafafa 44%,#bbbbbb 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #fafafa 44%,#bbbbbb 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#bbbbbb',GradientType=0 ); /* IE6-9 */
-}
-
-#starburst {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	background: url('/assets/starburst.png') no-repeat;
-	background-position: center;
-	background-size: cover;
-	opacity: .75;
 }
