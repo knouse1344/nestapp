@@ -11,13 +11,136 @@
 
 
  */
-
-
-
+/* line 17, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 html, body {
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.header-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/* line 31, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  padding-left: 25px;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #ccc;
+  z-index: 50000;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+/* line 47, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .name-link {
+  display: block;
+  position: relative;
+  height: 100%;
+  float: left;
+  text-transform: uppercase;
+}
+/* line 55, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .bold {
+  font-weight: 700;
+}
+/* line 59, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi h1 {
+  margin: 0;
+  height: 100%;
+  left: 150px;
+  font-size: 24px;
+  line-height: 80px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #666;
+  display: inline;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+/* line 76, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .section-title {
+  position: absolute;
+  margin: 0 auto 0 auto;
+  left: 50%;
+  margin-left: -175px;
+  width: 350px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 80px;
+  color: #aaa;
+  font-family: 'Source Sans Pro', sans-serif;
+  opacity: 0;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+/* line 95, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .links {
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+/* line 101, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #888;
+  box-sizing: border-box;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 20px 0 20px;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+/* line 117, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .links a:hover {
+  color: #333;
+  background: #f3f3f3;
+  border-bottom: 5px solid #ccc;
+}
+
+/* line 125, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.affix #top-navi {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #ccc;
+  z-index: 50000;
+}
+/* line 135, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.affix #top-navi h1 {
+  line-height: 40px;
+}
+/* line 141, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.affix #top-navi .links a {
+  height: 40px;
+  line-height: 40px;
 }
 /* line 5, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .clear {
@@ -1279,40 +1402,53 @@ html, body {
     margin: auto;
     display: block;
     width: auto;
+    padding: 15px;
+    background: -moz-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(79%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
   }
-  /* line 1259, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1266, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description .earnings_graph_axes {
     float: none;
     margin-top: 50px;
   }
-  /* line 1263, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1270, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description .earnings_graph_axes .earnings_ylabel {
     top: -90px;
   }
-  /* line 1272, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1279, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description {
     text-align: center;
   }
-  /* line 1275, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1282, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description .graph_desc {
     width: auto;
     margin: auto;
     display: block;
   }
-  /* line 1281, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1288, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description .growth_graph {
     float: none;
     margin-top: 50px;
   }
 }
-/* line 1290, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1297, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content {
   padding-top: 1em;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1296, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1303, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -1325,7 +1461,7 @@ html, body {
   padding-left: 2em;
   padding-right: 2em;
 }
-/* line 1309, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1316, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -1336,11 +1472,11 @@ html, body {
   text-transform: uppercase;
   font-size: 1.25em;
 }
-/* line 1320, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1327, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships {
   padding-bottom: 60px;
 }
-/* line 1323, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1330, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .star_box {
   height: 80px;
   margin-bottom: 20px;
@@ -1348,12 +1484,12 @@ html, body {
   margin-right: auto;
   text-align: center;
 }
-/* line 1331, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1338, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .stars:hover {
   background: url("/assets/business_stars_hover.png") no-repeat;
   background-size: 100%;
 }
-/* line 1336, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1343, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -1363,20 +1499,20 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1345, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1352, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description .intro {
   padding-bottom: .5em;
   font-weight: 400;
 }
-/* line 1350, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1357, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description .center {
   text-align: center;
 }
-/* line 1356, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1363, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content h3 {
   padding-bottom: 40px;
 }
-/* line 1360, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1367, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .description {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -1387,17 +1523,17 @@ html, body {
   width: 100%;
   color: #333;
 }
-/* line 1371, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1378, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth {
   width: 100%;
 }
-/* line 1374, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1381, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .graph_desc {
   width: 40%;
   font-size: .9em;
   display: inline-block;
 }
-/* line 1380, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1387, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes {
   float: right;
   width: 275px;
@@ -1410,20 +1546,20 @@ html, body {
   vertical-align: top;
   z-index: 10;
 }
-/* line 1392, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1399, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes .earnings_outer {
   height: 125px;
   width: 0px;
   overflow: hidden;
 }
-/* line 1397, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1404, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes .earnings_outer .earnings_data {
   background: url("/assets/earnings_graph.png") no-repeat;
   background-size: 100% 100%;
   width: 275px;
   height: 125px;
 }
-/* line 1406, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1413, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_ylabel {
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1439,7 +1575,7 @@ html, body {
   /* Opera */
   -o-transform: rotate(-90deg);
 }
-/* line 1422, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1429, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_xlabel {
   text-align: right;
   position: relative;
@@ -1448,19 +1584,19 @@ html, body {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-/* line 1432, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1439, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth {
   margin-left: auto;
   margin-right: auto;
   padding: 2em 0 3em 0;
 }
-/* line 1437, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1444, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .graph_desc {
   width: 40%;
   font-size: .9em;
   display: inline-block;
 }
-/* line 1443, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1450, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph {
   float: right;
   width: 300px;
@@ -1472,7 +1608,7 @@ html, body {
   margin-top: 10px;
   z-index: 10;
 }
-/* line 1454, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1461, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar {
   background: #63b7db;
   width: 25%;
@@ -1483,7 +1619,7 @@ html, body {
   vertical-align: bottom;
   z-index: 5;
 }
-/* line 1464, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1471, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar .counter {
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
@@ -1491,7 +1627,7 @@ html, body {
   color: #fff;
   opacity: 0;
 }
-/* line 1472, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1479, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar .count_style {
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
@@ -1499,27 +1635,27 @@ html, body {
   color: #fff;
   opacity: 0;
 }
-/* line 1481, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1488, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .placeholder {
   width: 1px;
   height: 100%;
   position: relative;
   display: inline-block;
 }
-/* line 1488, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1495, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_one {
   margin-left: 15px;
   height: 0%;
 }
-/* line 1493, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1500, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_two {
   height: 0%;
 }
-/* line 1497, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1504, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_three {
   height: 0%;
 }
-/* line 1501, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1508, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .xlabel {
   width: 32%;
   float: left;
@@ -1528,7 +1664,7 @@ html, body {
   bottom: -40px;
   left: -6%;
 }
-/* line 1510, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1517, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .rotate {
   /* Safari */
   -webkit-transform: rotate(-45deg);
@@ -1539,7 +1675,7 @@ html, body {
   /* Opera */
   -o-transform: rotate(-45deg);
 }
-/* line 1523, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1530, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .clear {
   clear: both;
 }
@@ -1828,41 +1964,22 @@ html, body {
 
 /* line 11, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
 #triangle_page {
+  padding-top: 120px;
   width: 100%;
   height: 100%;
 }
-/* line 15, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page h1 {
-  margin: 0;
-  padding: 1em 0 0em 0;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  color: #666;
-}
-/* line 24, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page h2 {
-  margin: 0;
-  padding: 0em 0 2em 0;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  color: #666;
-}
-/* line 33, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
+/* line 16, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
 #triangle_page #graphic {
-  position: absolute;
+  margin: 60px auto 0 auto;
   width: 692px;
   height: 596px;
-  margin-left: -350px;
-  left: 50%;
 }
-/* line 40, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
+/* line 21, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
 #triangle_page #graphic map {
   display: block;
   z-index: 0;
 }
-/* line 48, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
+/* line 29, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
 #triangle_page #graphic #triangle {
   margin-left: auto;
   margin-right: auto;
@@ -1870,43 +1987,19 @@ html, body {
   height: 596px;
   z-index: 0;
 }
-/* line 57, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page .links {
-  text-align: center;
-  padding-bottom: 40px;
-  margin: auto;
-  width: 90%;
-  margin-top: 700px;
-  color: #888;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 1.2em;
-}
-/* line 68, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page .links a {
-  text-decoration: none;
-  color: #666;
-  -webkit-transition: all .15s;
-  -moz-transition: all .15s;
-  -ms-transition: all .15s;
-  -o-transition: all .15s;
-  transition: all .15s;
-}
-/* line 78, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page .links a:hover {
-  color: #aaa;
-}
-/* line 82, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#triangle_page .links .divider {
-  padding-left: 3.5em;
-  padding-right: 3.5em;
+
+/* line 39, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
+#tri_top:hover .engineering-title {
+  display: block;
 }
 
-/* line 89, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
+/* line 43, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
 #bg {
   position: fixed;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: -2;
   background: #fafafa;
   /* Old browsers */
@@ -1924,16 +2017,4 @@ html, body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#bbbbbb',GradientType=0 );
   /* IE6-9 */
-}
-
-/* line 104, /home/bryan/Documents/knouse/app/assets/stylesheets/welcome.css.scss */
-#starburst {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background: url("/assets/starburst.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: .75;
 }

@@ -9,6 +9,7 @@
 }
 
 #triangle_page {
+	padding-top: 120px;
 	width: 100%;
 	height: 100%;
 
@@ -43,6 +44,8 @@
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	top: 0;
+	left: 0;
 	z-index: -2;
 	background: #fafafa; /* Old browsers */
 	background: -moz-linear-gradient(top,  #fafafa 44%, #bbbbbb 100%); /* FF3.6+ */

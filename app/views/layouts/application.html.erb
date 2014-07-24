@@ -3,11 +3,15 @@
 <head>
   <title>Bryan Knouse | Engineer, Designer, Entrepreneur</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <meta name="description" content="Bryan Knouse is a technically-focused and creative individual on an epic quest to build the internet. He is currently developing enterprise web products in New York, New York.">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Cardo:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-36287226-1']);
@@ -24,16 +28,6 @@
 </head>
 
 <body>
-
-	<div id="top-navi">
-		<h1>Bryan Knouse</h1>
-		<div class="section-title engineering-title">Engineering</div>
-		<div class="section-title entrepreneurship-title">Entrepreneurship</div>
-		<div class="section-title design-title">Design</div>
-		<div class="links">
-			<a href="/documents/resume">resume</a><a href="mailto:bryan.knouse@gmail.com">email</a><a href="http://www.linkedin.com/pub/bryan-knouse/35/a7/a57" target="_blank">linkedin</a><a href="https://github.com/knouse1344" target="_blank">github</a>
-		</div>
-	</div>
 
 	<%= yield %>
 

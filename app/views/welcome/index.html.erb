@@ -1,8 +1,24 @@
+<div class="header-wrap" data-spy="affix" data-offset-top="1">
+	<div id="top-navi">
+		<a class="name-link" href="/welcome/index">
+			<h1 class="bold">Bryan Knouse</h1>
+		</a>
+		<h1>/</h1>
+		<div class="links">
+			<a href="/welcome/engineering">engineering<div class="box"></div></a>
+			<a class="selected" href="/welcome/entrepreneurship">entrepreneurship<div class="box"></div></a>
+			<a href="/welcome/design">design<div class="box"></div></a>
+			<a href="/documents/resume">resume</a>
+<!-- 			<a href="mailto:bryan.knouse@gmail.com">email</a>
+			<a href="http://www.linkedin.com/pub/bryan-knouse/35/a7/a57" target="_blank">linkedin</a>
+			<a href="https://github.com/knouse1344" target="_blank">github</a> -->
+		</div>
+	</div>
+</div>
+
 <div id="triangle_page">
 	<div id="bg"> </div>
 
-	<h1>Bryan Knouse</h1>
-	
 	<div id="graphic">
 		<img id="triangle" alt="triangle" usemap="#triangle" src="/assets/triangle.png" />
 		<map name="triangle">
@@ -16,31 +32,13 @@
 </div>
 
 <script>
-$(document).ready(function () {
-	
+$(document).ready(function ()
+{
 	$('#triangle').mapster({
-		singleSelect : true,
-		clickNavigate : true,
-		render_highlight : { altImage : '/assets/triangle_hover.png' },
-	    mapKey: 'data-key'
-	});
-
-	$('#tri_top').hover(function() {
-		$('.engineering-title').css('opacity', '1');
-	}, function () {
-		$('.engineering-title').css('opacity', '0');
-	});
-
-	$('#tri_right').hover(function() {
-		$('.entrepreneurship-title').css('opacity', '1');
-	}, function () {
-		$('.entrepreneurship-title').css('opacity', '0');
-	});
-
-	$('#tri_left').hover(function() {
-		$('.design-title').css('opacity', '1');
-	}, function () {
-		$('.design-title').css('opacity', '0');
-	});
+	singleSelect : true,
+	clickNavigate : true,
+	render_highlight : { altImage : '/assets/triangle_hover.png' },
+    mapKey: 'data-key'
+});
 });
 </script>

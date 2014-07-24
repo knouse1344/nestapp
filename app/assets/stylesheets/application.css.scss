@@ -19,24 +19,57 @@ html, body {
 	padding: 0;
 }
 
+.header-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+}
+
 #top-navi {
 	position: fixed;
 	height: 80px;
 	width: 100%;
+	padding-left: 25px;
 	top: 0;
 	left: 0;
-	background: #fff;
+	background: rgba(255,255,255,.8);
 	border-bottom: 2px solid #ccc;
+	z-index: 50000;
+	-webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    -ms-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+
+    .name-link {
+    	display: block;
+    	position: relative;
+    	height: 100%;
+    	float:left;
+    	text-transform: uppercase;
+    }
+
+    .bold {
+    	font-weight: 700;
+    }
 
 	h1 {
 		margin:0;
-		padding-left: 25px;
-		float: left;
+		height: 100%;
+		left: 150px;
 		font-size: 24px;
 		line-height: 80px;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 600;
+		font-weight: 200;
 		color: #666;
+		display: inline;
+		-webkit-transition: all .15s;
+	    -moz-transition: all .15s;
+	    -ms-transition: all .15s;
+	    -o-transition: all .15s;
+	    transition: all .15s;
 	}
 
 	.section-title {
@@ -65,9 +98,10 @@ html, body {
 		font-size: 1em;
 
 		a {
+			text-transform: uppercase;
 			text-decoration: none;
 			display: inline-block;
-			color: #aaa;
+			color: #888;
 			box-sizing: border-box;
 			height: 80px;
 			line-height: 80px;
@@ -80,9 +114,32 @@ html, body {
 		}
 
 		a:hover {
-			color: #666;
-			background: #efefef;
-			border-bottom: 3px solid #ccc;
+			color: #333;
+			background: #f3f3f3;
+			border-bottom: 5px solid #ccc;
 		}
 	}	
+}
+
+.affix #top-navi {
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.9);
+	border-bottom: 2px solid #ccc;
+	z-index: 50000;
+
+	h1 {
+		line-height: 40px;
+	}
+
+	.links {
+
+		a {
+			height: 40px;
+			line-height: 40px;
+		}
+	}
 }
