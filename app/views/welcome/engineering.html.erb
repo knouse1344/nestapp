@@ -1,22 +1,40 @@
-<div id="navigation">
-	<a href="/welcome/index">home<div class="box"></div></a>
-	<a class="selected" href="/welcome/engineering">engineering<div class="box"></div></a>
-	<a href="/welcome/entrepreneurship">entrepreneurship<div class="box"></div></a>
-	<a href="/welcome/design">design<div class="box"></div></a>
+<div class="header-wrap" data-spy="affix" data-offset-top="1">
+	<div id="top-navi">
+		<div class="navi-information">
+			<a class="name-link" href="/welcome/index">
+				<h1 class="bold">Bryan Knouse/</h1>
+			</a>
+			<h1>ENGINEERING</h1>
+		</div>
+		<div class="desktop-links">
+			<a href="/welcome/engineering"><i class="fa fa-cogs"></i>engineering<div class="box"></div></a>
+			<a class="selected" href="/welcome/entrepreneurship"><i class="fa fa-share-alt"></i>entrepreneurship<div class="box"></div></a>
+			<a href="/welcome/design"><i class="fa fa-cubes"></i>design<div class="box"></div></a>
+			<a href="/documents/resume"><i class="fa fa-file-text"></i>resume</a>
+<!-- 			<a href="mailto:bryan.knouse@gmail.com">email</a>
+			<a href="http://www.linkedin.com/pub/bryan-knouse/35/a7/a57" target="_blank">linkedin</a>
+			<a href="https://github.com/knouse1344" target="_blank">github</a> -->
+		</div>
+
+		<div class="mobile-links">
+			<a href="/welcome/engineering"><i class="fa fa-cogs"></i><div class="box"></div></a>
+			<a class="selected" href="/welcome/entrepreneurship"><i class="fa fa-share-alt"></i><div class="box"></div></a>
+			<a href="/welcome/design"><i class="fa fa-cubes"></i><div class="box"></div></a>
+			<a href="/documents/resume"><i class="fa fa-file-text"></i></a>
+		</div>		
+	</div>
 </div>
 
 <div id="page">
-	<div id="bg"> </div>
+	<div id="bg"></div>
 
-	<div id="eng_header"><h1> DIGITAL & MECHANICAL ENGINEERING </h1><img src="/assets/eng_equations.png" /></div>
+	<div id="eng_header">
+		<img src="/assets/eng_equations.png" />
+	</div>
 	
-	<div id="topbar"> </div>
-	<div id="code_area"> 	
-		<div class="container">
-
-			<div id="numbers">
-				
-			</div>
+	<div id="topbar"></div>
+	<div id="code_area">
+		<div id="numbers"></div>
 
 			<div id="concept_row">
 				<div class="digital">
@@ -65,11 +83,8 @@
 					</div>
 					<img src="/assets/eng_manufacturing.jpg" />
 				</div>
-
 			</div>
-
 		</div>
-	</div>
 	<div id="botbar" style="box-shadow: 0px -8px 10px #000;"> </div>
 	<div id="nav_btns">
 		<div class="prev_btn"><</div>
@@ -79,67 +94,80 @@
 
 <script>
 
-var $number = 0;
+	var $number = 0;
 
-// $(".eng_digital").typewriter();
+	// $(".eng_digital").typewriter();
 
-$( ".next_btn" ).click(function() {
-	if($number < 4) {
-	  $( ".digital" ).animate({
-	    left: "-=100%"
-	  }, 1200 );
-	  $( ".concepts" ).animate({
-	    left: "-=100%"
-	  }, 1200 );
-	  $(".design").animate({
-	  	left: "-=100%"
-	  }, 1200 );
-	  $(".testing").animate({
-	  	left: "-=100%"
-	  }, 1200 );
-	  $(".construction").animate({
-	  	left: "-=100%"
-	  }, 1200 );
-	  $number += 1;
-	} else {
-	};
-	if($number == 4) {
-		$('.next_btn').css('opacity', '0');
-		$('.next_btn').css('cursor', 'auto');
-	}
-	if($number == 1) {
-		$('.prev_btn').css('opacity', '1');
-		$('.prev_btn').css('cursor', 'pointer');
-	}
-});
+	$( ".next_btn" ).click(function() {
+		if($number < 4) {
+		  $( ".digital" ).animate({
+		    left: "-=100%"
+		  }, 1200 );
+		  $( ".concepts" ).animate({
+		    left: "-=100%"
+		  }, 1200 );
+		  $(".design").animate({
+		  	left: "-=100%"
+		  }, 1200 );
+		  $(".testing").animate({
+		  	left: "-=100%"
+		  }, 1200 );
+		  $(".construction").animate({
+		  	left: "-=100%"
+		  }, 1200 );
+		  $number += 1;
+		} else {
+		};
+		if($number == 4) {
+			$('.next_btn').css('opacity', '0');
+			$('.next_btn').css('cursor', 'auto');
+		}
+		if($number == 1) {
+			$('.prev_btn').css('opacity', '1');
+			$('.prev_btn').css('cursor', 'pointer');
+		}
+	});
 
-$( ".prev_btn" ).click(function() {
-	if($number > 0) {
-	  $( ".digital" ).animate({
-	    left: "+=100%"
-	  }, 1200 );
-	  $( ".concepts" ).animate({
-	    left: "+=100%"
-	  }, 1200 );
-	  $(".design").animate({
-	  	left: "+=100%"
-	  }, 1200 );
-	  $(".testing").animate({
-	  	left: "+=100%"
-	  }, 1200 );
-	  $(".construction").animate({
-	  	left: "+=100%"
-	  }, 1200 );
-	  $number -= 1;
-	} else {
-	};
-	if($number == 3) {
-		$('.next_btn').css('opacity', '1');
-		$('.next_btn').css('cursor', 'pointer');
-	};
-	if($number == 0) {
-		$('.prev_btn').css('opacity', '0');
-		$('.prev_btn').css('cursor', 'auto');
-	}
-});
+	$( ".prev_btn" ).click(function() {
+		if($number > 0) {
+		  $( ".digital" ).animate({
+		    left: "+=100%"
+		  }, 1200 );
+		  $( ".concepts" ).animate({
+		    left: "+=100%"
+		  }, 1200 );
+		  $(".design").animate({
+		  	left: "+=100%"
+		  }, 1200 );
+		  $(".testing").animate({
+		  	left: "+=100%"
+		  }, 1200 );
+		  $(".construction").animate({
+		  	left: "+=100%"
+		  }, 1200 );
+		  $number -= 1;
+		} else {
+		};
+		if($number == 3) {
+			$('.next_btn').css('opacity', '1');
+			$('.next_btn').css('cursor', 'pointer');
+		};
+		if($number == 0) {
+			$('.prev_btn').css('opacity', '0');
+			$('.prev_btn').css('cursor', 'auto');
+		}
+	});
+
+
+	(function($){
+	    $(window).load(function(){
+	        $(".description").mCustomScrollbar({
+	        	theme:"inset-2"
+	        });
+	        $(".digi").mCustomScrollbar({
+	        	theme:"inset-2"
+	        });
+	    });
+	})(jQuery);
+
 </script>

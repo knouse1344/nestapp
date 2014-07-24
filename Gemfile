@@ -20,7 +20,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 
-
 gem 'protected_attributes'
 gem 'rails-observers'
 gem 'actionpack-page_caching'

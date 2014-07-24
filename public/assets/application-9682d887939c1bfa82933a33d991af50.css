@@ -25,43 +25,48 @@ html, body {
   left: 0;
   width: 100%;
   height: 80px;
+  z-index: 9999999;
 }
 
-/* line 31, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+/* line 32, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 #top-navi {
   position: fixed;
   height: 80px;
   width: 100%;
-  padding-left: 25px;
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid #ccc;
-  z-index: 50000;
   -webkit-transition: all .15s;
   -moz-transition: all .15s;
   -ms-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 47, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+/* line 46, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .navi-information {
+  float: left;
+  padding-left: 25px;
+}
+/* line 51, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 #top-navi .name-link {
-  display: block;
+  display: inline-block;
   position: relative;
   height: 100%;
-  float: left;
   text-transform: uppercase;
-}
-/* line 55, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
-#top-navi .bold {
-  font-weight: 700;
+  color: #666;
 }
 /* line 59, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .bold {
+  font-weight: 700;
+  font-size: 24px;
+}
+/* line 64, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 #top-navi h1 {
   margin: 0;
   height: 100%;
   left: 150px;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 80px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
@@ -73,7 +78,7 @@ html, body {
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 76, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+/* line 81, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 #top-navi .section-title {
   position: absolute;
   margin: 0 auto 0 auto;
@@ -92,15 +97,15 @@ html, body {
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 95, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
-#top-navi .links {
+/* line 100, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .desktop-links {
   float: right;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
-/* line 101, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
-#top-navi .links a {
+/* line 106, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .desktop-links a {
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -115,14 +120,51 @@ html, body {
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 117, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
-#top-navi .links a:hover {
+/* line 122, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .desktop-links a:hover {
   color: #333;
   background: #f3f3f3;
   border-bottom: 5px solid #ccc;
 }
+/* line 128, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .desktop-links i {
+  padding-right: 10px;
+}
+/* line 133, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .mobile-links {
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-right: 15px;
+}
+/* line 140, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .mobile-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #888;
+  box-sizing: border-box;
+  height: 80px;
+  line-height: 80px;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -ms-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+/* line 155, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .mobile-links a:hover {
+  color: #333;
+  background: #f3f3f3;
+  border-bottom: 5px solid #ccc;
+}
+/* line 161, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+#top-navi .mobile-links i {
+  padding: 0 25px;
+}
 
-/* line 125, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+/* line 167, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 .affix #top-navi {
   position: fixed;
   height: 40px;
@@ -133,14 +175,78 @@ html, body {
   border-bottom: 2px solid #ccc;
   z-index: 50000;
 }
-/* line 135, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+/* line 177, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
 .affix #top-navi h1 {
   line-height: 40px;
 }
-/* line 141, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
-.affix #top-navi .links a {
+/* line 183, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.affix #top-navi .desktop-links a {
   height: 40px;
   line-height: 40px;
+}
+/* line 191, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+.affix #top-navi .mobile-links a {
+  height: 40px;
+  line-height: 40px;
+}
+
+@media all and (min-width: 991px) {
+  /* line 202, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .desktop-links {
+    display: block;
+  }
+  /* line 206, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .mobile-links {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  /* line 216, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .desktop-links {
+    display: none;
+  }
+  /* line 220, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .mobile-links {
+    display: block;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 228, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  .affix #top-navi {
+    height: auto;
+  }
+
+  /* line 232, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi {
+    height: auto;
+  }
+  /* line 235, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .navi-information {
+    float: none;
+    margin: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+  /* line 241, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .navi-information h1 {
+    line-height: 40px;
+  }
+  /* line 246, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .desktop-links {
+    display: none;
+  }
+  /* line 250, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .mobile-links {
+    float: none;
+    padding-right: 0;
+    text-align: center;
+    display: block;
+  }
+  /* line 256, /home/bryan/Documents/knouse/app/assets/stylesheets/application.css.scss */
+  #top-navi .mobile-links a {
+    height: 40px;
+    line-height: 40px;
+  }
 }
 /* line 5, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .clear {
@@ -222,15 +328,16 @@ html, body {
 /* line 82, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #eng_header {
   width: 100%;
+  height: 180px;
   padding-bottom: 4em;
 }
-/* line 86, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 87, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #eng_header h1 {
   padding: 60px 0 20px 0;
   font-size: 40px;
   font-weight: bold;
 }
-/* line 92, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 93, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #eng_header img {
   top: -20px;
   right: 0;
@@ -240,7 +347,7 @@ html, body {
   position: absolute;
 }
 
-/* line 102, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 103, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .float_title {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -251,28 +358,24 @@ html, body {
   padding-bottom: 1.5em;
 }
 
-/* line 112, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 113, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #topbar {
   position: relative;
   width: 100%;
   height: .8em;
   background: #999;
-  margin-left: -1em;
-  padding-right: 1em;
   margin-bottom: -.5em;
   box-shadow: 0px 8px 10px #000;
   z-index: 15;
 }
 
-/* line 124, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 123, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #botbar {
   position: relative;
   width: 100%;
   height: .8em;
   background: #999;
-  margin-left: -1em;
   margin-top: -.5em;
-  padding-right: 1em;
   z-index: 15;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -281,10 +384,11 @@ html, body {
   transition: all .5s;
 }
 
-/* line 140, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 137, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #code_area {
   padding-top: .5em;
   width: 100%;
+  height: 550px;
   background: #272822;
   z-index: -10;
   -webkit-transition: all 1s;
@@ -293,12 +397,8 @@ html, body {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 151, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
-#code_area .container {
-  height: 600px;
-}
 
-/* line 156, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 150, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #nav_btns {
   margin-left: auto;
   margin-right: auto;
@@ -309,7 +409,7 @@ html, body {
   font-weight: 700;
   z-index: 25;
 }
-/* line 166, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 160, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #nav_btns .prev_btn {
   float: left;
   padding: 0 20px 0 20px;
@@ -321,11 +421,11 @@ html, body {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 178, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 172, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #nav_btns .prev_btn:hover {
   background: #999;
 }
-/* line 182, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 176, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #nav_btns .next_btn {
   float: right;
   cursor: pointer;
@@ -336,19 +436,19 @@ html, body {
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 193, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 187, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #nav_btns .next_btn:hover {
   background: #999;
 }
 
-/* line 199, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 193, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row {
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-/* line 205, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 199, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row h1 {
   color: #fff;
   margin: 0 0 20px 0;
@@ -362,10 +462,10 @@ html, body {
   font-style: italic;
   font-family: 'Source Sans Pro', sans-serif;
 }
-/* line 219, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 213, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .description {
   width: 27%;
-  padding: 40px;
+  padding: 25px 5px 25px 25px;
   max-height: 420px;
   min-width: 325px;
   left: 3%;
@@ -375,7 +475,7 @@ html, body {
   border: 2px solid #999;
   margin-top: 40px;
 }
-/* line 231, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 225, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .description p {
   padding: 0px 0 10px 0;
   margin: 0;
@@ -385,7 +485,15 @@ html, body {
   font-weight: 400;
   color: #eee;
 }
-/* line 242, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 236, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+#concept_row .description .mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail {
+  border-radius: 0;
+}
+/* line 240, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+#concept_row .description .mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  border-radius: 0;
+}
+/* line 244, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital {
   width: 100%;
   height: 100%;
@@ -394,10 +502,10 @@ html, body {
   left: 0;
   overflow: hidden;
 }
-/* line 250, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 252, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .digi {
   width: 35%;
-  padding: 40px;
+  padding: 25px 5px 25px 25px;
   max-height: 420px;
   right: 7%;
   position: absolute;
@@ -406,7 +514,7 @@ html, body {
   border: 2px solid #999;
   margin-top: 80px;
 }
-/* line 261, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 263, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .digi p {
   padding: 0px 0 10px 0;
   margin: 0;
@@ -416,13 +524,21 @@ html, body {
   font-weight: 400;
   color: #eee;
 }
-/* line 270, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 272, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .digi p a {
   text-decoration: none;
   color: #eee;
   border-bottom: 1px solid;
 }
-/* line 278, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 280, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+#concept_row .digital .digi .mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail {
+  border-radius: 0;
+}
+/* line 284, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+#concept_row .digital .digi .mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  border-radius: 0;
+}
+/* line 288, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .skills {
   position: absolute;
   right: 0;
@@ -436,13 +552,13 @@ html, body {
   color: #323232;
   text-align: right;
 }
-/* line 292, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 302, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .skills .border {
   padding-top: .25em;
   margin-bottom: .25em;
   border-bottom: 1px dotted #333;
 }
-/* line 298, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 308, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .digital .codies {
   height: 100%;
   position: absolute;
@@ -450,9 +566,9 @@ html, body {
   opacity: 1;
   z-index: 0;
 }
-/* line 307, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 317, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .concepts {
-  width: 95%;
+  width: 100%;
   height: 100%;
   padding-left: 5%;
   position: absolute;
@@ -460,16 +576,16 @@ html, body {
   left: 100%;
   overflow: hidden;
 }
-/* line 316, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 326, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .concepts .concepts_one {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
 }
-/* line 324, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 334, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .design {
-  width: 95%;
+  width: 100%;
   height: 100%;
   padding-left: 5%;
   position: absolute;
@@ -477,16 +593,16 @@ html, body {
   left: 200%;
   overflow: hidden;
 }
-/* line 333, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 343, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .design .design_one {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
 }
-/* line 341, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 351, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .testing {
-  width: 95%;
+  width: 100%;
   height: 100%;
   padding-left: 5%;
   position: absolute;
@@ -494,16 +610,16 @@ html, body {
   left: 300%;
   overflow: hidden;
 }
-/* line 350, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 360, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .testing img {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
 }
-/* line 358, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 368, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .construction {
-  width: 95%;
+  width: 100%;
   height: 100%;
   padding-left: 5%;
   position: absolute;
@@ -511,7 +627,7 @@ html, body {
   left: 400%;
   overflow: hidden;
 }
-/* line 367, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 377, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #concept_row .construction img {
   position: absolute;
   top: 0;
@@ -519,7 +635,17 @@ html, body {
   height: 100%;
 }
 
-/* line 376, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+@media all and (max-width: 768px) {
+  /* line 390, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  #concept_row .digital .digi {
+    width: 60%;
+  }
+  /* line 395, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  #concept_row .description {
+    width: 60%;
+  }
+}
+/* line 401, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .stretch {
   width: 100%;
   display: inline-block;
@@ -527,29 +653,29 @@ html, body {
   line-height: 0;
 }
 
-/* line 387, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 412, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #des_title {
-  padding-top: 4em;
+  padding-top: 200px;
   padding-bottom: 8em;
   text-align: center;
 }
-/* line 392, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 417, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #des_title img {
   width: 80%;
   max-width: 1400px;
 }
 
-/* line 398, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 423, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .subtitle_bar {
   width: 100%;
   background: #424242;
-  height: 6em;
-  padding-top: 1.5em;
+  height: 80px;
 }
-/* line 404, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 428, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .subtitle_bar .subtitle {
-  font-size: 5em;
+  font-size: 60px;
   letter-spacing: -2px;
+  line-height: 80px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   color: #fff;
@@ -557,12 +683,29 @@ html, body {
   margin-right: 20%;
 }
 
-/* line 415, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+@media all and (max-width: 768px) {
+  /* line 442, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  .subtitle_bar {
+    height: 50px;
+  }
+  /* line 445, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  .subtitle_bar .subtitle {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+    margin-right: 20%;
+  }
+}
+/* line 458, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux {
   padding-bottom: 3em;
 }
 @media (min-width: 1600px) {
-  /* line 419, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 462, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rooneys {
     padding-top: 5em;
     width: 1200px;
@@ -571,7 +714,7 @@ html, body {
   }
 }
 @media (max-width: 1600px) and (min-width: 1000px) {
-  /* line 428, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 471, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rooneys {
     padding-top: 5em;
     width: 900px;
@@ -580,7 +723,7 @@ html, body {
   }
 }
 @media (max-width: 1000px) {
-  /* line 437, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 480, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rooneys {
     padding-top: 5em;
     width: 80%;
@@ -588,20 +731,20 @@ html, body {
     margin-right: auto;
   }
 }
-/* line 446, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 489, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rooneys_imac {
   max-width: 475px;
   width: 50%;
   float: left;
 }
-/* line 452, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 495, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rooneys_title {
   float: right;
   margin-right: 1%;
   width: 45%;
   max-width: 446px;
 }
-/* line 459, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 502, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rooneys_desc {
   float: right;
   width: 45%;
@@ -613,7 +756,7 @@ html, body {
   text-align: center;
 }
 @media (min-width: 1600px) {
-  /* line 471, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 514, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rouhana {
     padding-top: 8em;
     padding-bottom: 8em;
@@ -623,7 +766,7 @@ html, body {
   }
 }
 @media (max-width: 1600px) and (min-width: 1000px) {
-  /* line 481, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 524, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rouhana {
     padding-top: 8em;
     padding-bottom: 8em;
@@ -631,13 +774,13 @@ html, body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 488, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 531, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rouhana .rouhana_ipad {
     padding-top: 2em;
   }
 }
 @media (max-width: 1000px) {
-  /* line 495, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 538, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rouhana {
     padding-top: 8em;
     padding-bottom: 8em;
@@ -645,18 +788,18 @@ html, body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 502, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 545, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #web_ux #rouhana .rouhana_ipad {
     padding-top: 3em;
   }
 }
-/* line 508, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 551, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rouhana_title {
   width: 47%;
   margin-left: 3%;
   max-width: 374px;
 }
-/* line 514, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 557, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rouhana_desc {
   width: 45%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -665,19 +808,19 @@ html, body {
   font-weight: 200;
   text-align: center;
 }
-/* line 523, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 566, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #web_ux .rouhana_ipad {
   float: right;
   width: 50%;
   max-width: 590px;
 }
 
-/* line 530, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 573, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #products {
   width: 100%;
   background: #d4d4d4;
 }
-/* line 534, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 577, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #products .container {
   padding-top: 4em;
   text-align: center;
@@ -685,13 +828,13 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 541, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 584, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #products .container .products {
   width: 100%;
   margin-left: -5%;
   max-width: 1500px;
 }
-/* line 547, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 590, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #products .container .description {
   width: 80%;
   color: #444;
@@ -706,7 +849,7 @@ html, body {
   text-align: center;
 }
 
-/* line 564, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 607, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #engineering {
   width: 100%;
   background: url("/assets/design_eng_bg.jpg");
@@ -714,7 +857,7 @@ html, body {
   padding-top: 4em;
   padding-bottom: 8em;
 }
-/* line 571, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 614, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #engineering .engineering_photo {
   width: 60%;
   display: block;
@@ -722,7 +865,7 @@ html, body {
   margin-right: auto;
   max-width: 1296px;
 }
-/* line 579, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 622, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #engineering .eng_desc {
   width: 60%;
   max-width: 979px;
@@ -738,7 +881,7 @@ html, body {
   background-position: center;
 }
 
-/* line 597, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 640, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #data {
   width: 100%;
   position: relative;
@@ -746,7 +889,7 @@ html, body {
   background: #898989;
   padding-bottom: 4em;
 }
-/* line 604, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 647, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #data .design_circle {
   background: #fecdc9;
   opacity: 1;
@@ -754,7 +897,7 @@ html, body {
   z-index: 10;
 }
 @media (min-width: 1600px) {
-  /* line 612, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 655, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .one {
     width: 15px;
     height: 15px;
@@ -762,7 +905,7 @@ html, body {
     right: 1185px;
     top: 260px;
   }
-  /* line 620, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 663, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .two {
     width: 10px;
     height: 10px;
@@ -770,7 +913,7 @@ html, body {
     right: 1227px;
     top: 245px;
   }
-  /* line 628, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 671, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .three {
     width: 5px;
     height: 5px;
@@ -778,7 +921,7 @@ html, body {
     right: 1216px;
     top: 355px;
   }
-  /* line 636, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 679, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .four {
     width: 12px;
     height: 12px;
@@ -786,7 +929,7 @@ html, body {
     right: 1230px;
     top: 194px;
   }
-  /* line 644, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 687, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .five {
     width: 8px;
     height: 8px;
@@ -794,7 +937,7 @@ html, body {
     right: 1282px;
     top: 335px;
   }
-  /* line 652, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 695, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .six {
     width: 4px;
     height: 4px;
@@ -802,13 +945,13 @@ html, body {
     right: 1082px;
     top: 552px;
   }
-  /* line 660, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 703, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_image {
     padding: 4em 0 4em 0;
     float: right;
     width: 1500px;
   }
-  /* line 666, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 709, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_desc {
     margin-left: auto;
     margin-right: auto;
@@ -821,7 +964,7 @@ html, body {
   }
 }
 @media (max-width: 1600px) and (min-width: 1200px) {
-  /* line 679, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 722, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .one {
     width: 15px;
     height: 15px;
@@ -829,7 +972,7 @@ html, body {
     right: 950px;
     top: 218px;
   }
-  /* line 687, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 730, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .two {
     width: 10px;
     height: 10px;
@@ -837,7 +980,7 @@ html, body {
     right: 983px;
     top: 165px;
   }
-  /* line 695, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 738, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .three {
     width: 5px;
     height: 5px;
@@ -845,7 +988,7 @@ html, body {
     right: 1027px;
     top: 281px;
   }
-  /* line 703, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 746, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .four {
     width: 12px;
     height: 12px;
@@ -853,7 +996,7 @@ html, body {
     right: 980px;
     top: 205px;
   }
-  /* line 711, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 754, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .five {
     width: 8px;
     height: 8px;
@@ -861,7 +1004,7 @@ html, body {
     right: 972px;
     top: 294px;
   }
-  /* line 719, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 762, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .six {
     width: 4px;
     height: 4px;
@@ -869,13 +1012,13 @@ html, body {
     right: 865px;
     top: 454px;
   }
-  /* line 727, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 770, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_image {
     padding: 4em 0 4em 0;
     float: right;
     width: 1200px;
   }
-  /* line 733, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 776, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_desc {
     margin-left: auto;
     margin-right: auto;
@@ -888,7 +1031,7 @@ html, body {
   }
 }
 @media (max-width: 1300px) and (min-width: 900px) {
-  /* line 746, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 789, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .one {
     width: 10px;
     height: 10px;
@@ -896,7 +1039,7 @@ html, body {
     right: 672px;
     top: 175px;
   }
-  /* line 754, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 797, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .two {
     width: 8px;
     height: 8px;
@@ -904,7 +1047,7 @@ html, body {
     right: 695px;
     top: 165px;
   }
-  /* line 762, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 805, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .three {
     width: 7px;
     height: 7px;
@@ -912,7 +1055,7 @@ html, body {
     right: 697px;
     top: 138px;
   }
-  /* line 770, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 813, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .four {
     width: 6px;
     height: 6px;
@@ -920,7 +1063,7 @@ html, body {
     right: 727px;
     top: 217px;
   }
-  /* line 778, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 821, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .five {
     width: 5px;
     height: 5px;
@@ -928,7 +1071,7 @@ html, body {
     right: 689px;
     top: 228px;
   }
-  /* line 786, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 829, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .six {
     width: 4px;
     height: 4px;
@@ -936,13 +1079,13 @@ html, body {
     right: 613px;
     top: 342px;
   }
-  /* line 794, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 837, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_image {
     padding: 4em 0 4em 0;
     float: right;
     width: 850px;
   }
-  /* line 800, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 843, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_desc {
     margin-left: auto;
     margin-right: auto;
@@ -955,13 +1098,13 @@ html, body {
   }
 }
 @media (max-width: 900px) {
-  /* line 815, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 858, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_image {
     padding: 4em 0 4em 0;
     float: right;
     width: 90%;
   }
-  /* line 821, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 864, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #data .data_desc {
     margin-left: auto;
     margin-right: auto;
@@ -974,14 +1117,14 @@ html, body {
   }
 }
 
-/* line 835, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 878, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #skillz {
   width: 100%;
   padding-top: 5em;
   padding-bottom: 8em;
   background: #242424;
 }
-/* line 843, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 886, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #skillz .container .toolbox_image {
   width: 100%;
   position: relative;
@@ -993,12 +1136,12 @@ html, body {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 855, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 898, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #skillz .container .toolbox_trigger {
   width: 50%;
 }
 
-/* line 862, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 905, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #border {
   width: 100%;
   background: #222;
@@ -1008,7 +1151,7 @@ html, body {
   border-top: 4px solid #888;
   border-bottom: 4px solid #888;
 }
-/* line 871, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 914, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #border .line {
   width: 100%;
   height: 4px;
@@ -1016,14 +1159,14 @@ html, body {
   z-index: 10;
 }
 
-/* line 879, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 922, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #fini {
   width: 100%;
   padding-top: 8em;
   padding-bottom: 8em;
   background: #333;
 }
-/* line 885, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 928, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #fini .container {
   width: 100%;
   height: 800px;
@@ -1045,14 +1188,14 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444', endColorstr='#333333',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 900, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 943, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #fini .container .fini_img {
   width: 497px;
   height: 232px;
   margin-top: 200px;
   margin-bottom: 200px;
 }
-/* line 908, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 951, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #fini .fini_button {
   opacity: .45;
   width: 100px;
@@ -1063,12 +1206,12 @@ html, body {
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 919, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 962, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #fini .fini_button:hover {
   opacity: 1;
 }
 
-/* line 924, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 967, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .d_subtitle {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -1079,7 +1222,7 @@ html, body {
   background: #444;
 }
 
-/* line 934, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 977, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .d_left {
   position: absolute;
   left: 0;
@@ -1087,7 +1230,7 @@ html, body {
   padding-right: 2em;
 }
 
-/* line 941, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 984, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .d_right {
   position: absolute;
   right: 0;
@@ -1095,13 +1238,13 @@ html, body {
   padding-left: 2em;
 }
 
-/* line 948, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 991, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
-/* line 953, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 996, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .row {
   width: 100%;
   padding-bottom: 3em;
@@ -1109,7 +1252,7 @@ html, body {
   margin-top: 7.5em;
   display: inline-block;
 }
-/* line 961, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1004, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .description {
   padding-top: 2em;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1117,43 +1260,43 @@ html, body {
   font-size: 1.1em;
   text-align: center;
 }
-/* line 969, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1012, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .interface {
   max-width: 50%;
   height: 400px;
   display: inline-block;
 }
-/* line 974, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1017, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .interface .imgroup {
   text-align: justify;
 }
-/* line 977, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1020, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .interface .imgroup img {
   display: inline-block;
   width: 45%;
   border: 1px solid #ddd;
 }
-/* line 985, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1028, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .analytics {
   max-width: 44%;
   border: 1px solid;
   float: right;
 }
-/* line 990, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1033, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .analytics .google {
   height: 220px;
   background: #aaa;
 }
-/* line 996, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1039, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .product {
   max-width: 50%;
   float: left;
 }
-/* line 1000, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1043, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .product .imgroup {
   text-align: justify;
 }
-/* line 1004, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1047, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #content .product .imgroup img {
   margin-left: auto;
   margin-right: auto;
@@ -1162,12 +1305,12 @@ html, body {
   border: 1px solid #ddd;
 }
 
-/* line 1015, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1058, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 .clear {
   clear: both;
 }
 
-/* line 1019, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1062, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #des_footer {
   background: url("/assets/design_design.png") repeat-x;
   background-position: bottom;
@@ -1176,35 +1319,35 @@ html, body {
   padding-top: 7.5em;
 }
 
-/* line 1032, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1075, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles {
   height: 252px;
   position: relative;
   overflow-x: hidden;
   z-index: -1;
 }
-/* line 1038, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1081, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .biz_circle {
   background: #aaa;
   z-index: -1;
   position: absolute;
   opacity: .4;
 }
-/* line 1045, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1088, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .biz2_circle {
   background: #aaa;
   z-index: -1;
   position: absolute;
   opacity: .2;
 }
-/* line 1052, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1095, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .biz3_circle {
   background: #aaa;
   z-index: -1;
   position: absolute;
   opacity: .75;
 }
-/* line 1059, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1102, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .one {
   width: 300px;
   height: 300px;
@@ -1212,7 +1355,7 @@ html, body {
   left: -100px;
   top: -100px;
 }
-/* line 1067, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1110, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .two {
   width: 65px;
   height: 65px;
@@ -1220,7 +1363,7 @@ html, body {
   left: 320px;
   top: -3px;
 }
-/* line 1075, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1118, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .three {
   width: 60px;
   height: 60px;
@@ -1228,7 +1371,7 @@ html, body {
   left: 266px;
   top: 165px;
 }
-/* line 1083, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1126, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .four {
   width: 30px;
   height: 30px;
@@ -1236,7 +1379,7 @@ html, body {
   left: 368px;
   top: 105px;
 }
-/* line 1091, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1134, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .five {
   width: 30px;
   height: 30px;
@@ -1244,7 +1387,7 @@ html, body {
   left: 502px;
   top: 8px;
 }
-/* line 1099, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1142, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .six {
   width: 30px;
   height: 30px;
@@ -1252,7 +1395,7 @@ html, body {
   left: 790px;
   top: 155px;
 }
-/* line 1107, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1150, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .seven {
   width: 60px;
   height: 60px;
@@ -1260,7 +1403,7 @@ html, body {
   left: 525px;
   top: 120px;
 }
-/* line 1115, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1158, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .eight {
   width: 70px;
   height: 70px;
@@ -1268,7 +1411,7 @@ html, body {
   left: 995px;
   top: 35px;
 }
-/* line 1123, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1166, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .nine {
   width: 40px;
   height: 40px;
@@ -1276,7 +1419,7 @@ html, body {
   left: 1225px;
   top: 70px;
 }
-/* line 1131, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1174, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .ten {
   width: 30px;
   height: 30px;
@@ -1284,7 +1427,7 @@ html, body {
   left: 1102px;
   top: 167px;
 }
-/* line 1139, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1182, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles .ent_image {
   width: 1200px;
   height: 252px;
@@ -1294,11 +1437,11 @@ html, body {
   background: url("/assets/business_header.png") no-repeat;
   z-index: -1;
 }
-/* line 1149, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1192, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles #biz_header {
   width: 100%;
 }
-/* line 1152, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1195, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #header_circles #biz_header h1 {
   padding-top: 1em;
   font-size: 3em;
@@ -1307,15 +1450,15 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-  /* line 1162, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1205, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content {
     width: 800px;
   }
-  /* line 1165, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1208, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box {
     width: 500px;
   }
-  /* line 1168, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1211, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box .star_img {
     background: url("/assets/business_star.png") no-repeat;
     background-size: contain;
@@ -1328,15 +1471,15 @@ html, body {
   }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
-  /* line 1183, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1226, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content {
     width: 700px;
   }
-  /* line 1186, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1229, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box {
     width: 500px;
   }
-  /* line 1189, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1232, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box .star_img {
     background: url("/assets/business_star.png") no-repeat;
     background-size: contain;
@@ -1349,15 +1492,15 @@ html, body {
   }
 }
 @media (min-width: 650px) and (max-width: 899px) {
-  /* line 1204, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1247, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content {
     width: 600px;
   }
-  /* line 1207, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1250, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box {
     width: 500px;
   }
-  /* line 1210, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1253, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .star_box .star_img {
     background: url("/assets/business_star.png") no-repeat;
     background-size: contain;
@@ -1370,15 +1513,15 @@ html, body {
   }
 }
 @media (max-width: 649px) {
-  /* line 1226, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1269, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content {
     width: 95%;
   }
-  /* line 1231, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1274, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .relationships .star_box {
     width: 90%;
   }
-  /* line 1234, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1277, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content .relationships .star_box .star_img {
     background: url("/assets/business_star.png") no-repeat;
     background-size: contain;
@@ -1389,66 +1532,53 @@ html, body {
     margin-right: 1%;
     opacity: 0;
   }
-  /* line 1247, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1290, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth {
     padding-bottom: 60px;
   }
-  /* line 1250, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1293, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description {
     text-align: center;
   }
-  /* line 1253, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1296, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description .graph_desc {
     margin: auto;
     display: block;
     width: auto;
-    padding: 15px;
-    background: -moz-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(79%, white), color-stop(100%, rgba(255, 255, 255, 0)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, white 0%, white 79%, rgba(255, 255, 255, 0) 100%);
-    /* W3C */
   }
-  /* line 1266, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1303, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description .earnings_graph_axes {
     float: none;
     margin-top: 50px;
   }
-  /* line 1270, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1307, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #responsive_growth .description .earnings_graph_axes .earnings_ylabel {
     top: -90px;
   }
-  /* line 1279, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1316, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description {
     text-align: center;
   }
-  /* line 1282, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1319, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description .graph_desc {
     width: auto;
     margin: auto;
     display: block;
   }
-  /* line 1288, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+  /* line 1325, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
   #biz_content #bfgrowth .description .growth_graph {
     float: none;
     margin-top: 50px;
   }
 }
-/* line 1297, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1334, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content {
   padding-top: 1em;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1303, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1340, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -1461,7 +1591,7 @@ html, body {
   padding-left: 2em;
   padding-right: 2em;
 }
-/* line 1316, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1353, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -1472,11 +1602,11 @@ html, body {
   text-transform: uppercase;
   font-size: 1.25em;
 }
-/* line 1327, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1364, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships {
   padding-bottom: 60px;
 }
-/* line 1330, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1367, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .star_box {
   height: 80px;
   margin-bottom: 20px;
@@ -1484,12 +1614,12 @@ html, body {
   margin-right: auto;
   text-align: center;
 }
-/* line 1338, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1375, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .stars:hover {
   background: url("/assets/business_stars_hover.png") no-repeat;
   background-size: 100%;
 }
-/* line 1343, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1380, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -1499,41 +1629,54 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1352, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1389, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description .intro {
   padding-bottom: .5em;
   font-weight: 400;
 }
-/* line 1357, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1394, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .relationships .description .center {
   text-align: center;
 }
-/* line 1363, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1400, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content h3 {
   padding-bottom: 40px;
 }
-/* line 1367, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1404, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .description {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
-  display: inline-block;
   padding-top: 1em;
   padding-bottom: 1em;
   width: 100%;
   color: #333;
 }
-/* line 1378, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1414, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth {
   width: 100%;
+  padding: 15px 15px 100px 15px;
+  margin-bottom: 60px;
+  background: -moz-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(85%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
 }
-/* line 1381, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1425, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .graph_desc {
   width: 40%;
   font-size: .9em;
   display: inline-block;
 }
-/* line 1387, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1431, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes {
   float: right;
   width: 275px;
@@ -1546,20 +1689,20 @@ html, body {
   vertical-align: top;
   z-index: 10;
 }
-/* line 1399, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1443, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes .earnings_outer {
   height: 125px;
   width: 0px;
   overflow: hidden;
 }
-/* line 1404, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1448, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_graph_axes .earnings_outer .earnings_data {
   background: url("/assets/earnings_graph.png") no-repeat;
   background-size: 100% 100%;
   width: 275px;
   height: 125px;
 }
-/* line 1413, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1457, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_ylabel {
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1575,7 +1718,7 @@ html, body {
   /* Opera */
   -o-transform: rotate(-90deg);
 }
-/* line 1429, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1473, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #responsive_growth .earnings_xlabel {
   text-align: right;
   position: relative;
@@ -1584,19 +1727,31 @@ html, body {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-/* line 1439, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1483, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth {
   margin-left: auto;
   margin-right: auto;
-  padding: 2em 0 3em 0;
+  padding: 15px 15px 100px 15px;
+  background: -moz-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(85%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, white 85%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
 }
-/* line 1444, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1494, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .graph_desc {
   width: 40%;
   font-size: .9em;
   display: inline-block;
 }
-/* line 1450, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1500, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph {
   float: right;
   width: 300px;
@@ -1608,7 +1763,7 @@ html, body {
   margin-top: 10px;
   z-index: 10;
 }
-/* line 1461, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1511, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar {
   background: #63b7db;
   width: 25%;
@@ -1619,7 +1774,7 @@ html, body {
   vertical-align: bottom;
   z-index: 5;
 }
-/* line 1471, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1521, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar .counter {
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
@@ -1627,7 +1782,7 @@ html, body {
   color: #fff;
   opacity: 0;
 }
-/* line 1479, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1529, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar .count_style {
   font-family: 'Source Sans Pro',sans-serif;
   font-weight: 700;
@@ -1635,27 +1790,27 @@ html, body {
   color: #fff;
   opacity: 0;
 }
-/* line 1488, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1538, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .placeholder {
   width: 1px;
   height: 100%;
   position: relative;
   display: inline-block;
 }
-/* line 1495, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1545, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_one {
   margin-left: 15px;
   height: 0%;
 }
-/* line 1500, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1550, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_two {
   height: 0%;
 }
-/* line 1504, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1554, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .bar_three {
   height: 0%;
 }
-/* line 1508, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1558, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .xlabel {
   width: 32%;
   float: left;
@@ -1664,7 +1819,7 @@ html, body {
   bottom: -40px;
   left: -6%;
 }
-/* line 1517, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1567, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content #bfgrowth .growth_graph .rotate {
   /* Safari */
   -webkit-transform: rotate(-45deg);
@@ -1675,7 +1830,7 @@ html, body {
   /* Opera */
   -o-transform: rotate(-45deg);
 }
-/* line 1530, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
+/* line 1580, /home/bryan/Documents/knouse/app/assets/stylesheets/because.css.scss */
 #biz_content .clear {
   clear: both;
 }
@@ -1742,7 +1897,7 @@ html, body {
 }
 /* line 75, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume {
-  padding: 5em 0 5em 0;
+  padding: 150px 0 5em 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1803,10 +1958,11 @@ html, body {
   height: 30px;
   border-radius: 30px;
   display: inline-block;
+  z-index: -1;
   position: relative;
   top: 3px;
 }
-/* line 138, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 139, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #header #logo h1 {
   display: inline-block;
   padding-left: 50px;
@@ -1816,7 +1972,7 @@ html, body {
   color: #222;
   margin: 0;
 }
-/* line 148, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 149, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #header #logo ul {
   margin-left: auto;
   margin-right: auto;
@@ -1826,68 +1982,69 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #ccc;
 }
-/* line 157, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 158, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #header #logo ul li {
   color: #aaa;
   display: inline-block;
   margin-right: 15px;
   margin-left: 15px;
 }
-/* line 163, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 164, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #header #logo ul li a {
   text-decoration: none;
   color: #aaa;
 }
-/* line 172, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 173, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .icon {
   background: #cacaca;
   margin-top: 5px;
   margin-bottom: 4em;
   opacity: .3;
+  position: relative;
 }
-/* line 179, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 181, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .reads {
   background: url("/assets/Resume_book_icon_small.png");
   width: 80px;
   height: 31px;
 }
-/* line 186, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 188, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .target {
   width: 80px;
   height: 80px;
   background: url("/assets/Resume_target_icon_small.png");
 }
-/* line 193, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 195, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .work {
   background: url("/assets/Resume_activities_icon_small.png");
   width: 80px;
   height: 80px;
 }
-/* line 199, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 201, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .education {
   background: url("/assets/Resume_graduation_icon_small.png");
   width: 80px;
   height: 44px;
 }
-/* line 205, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 207, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .resume_skills {
   background: url("/assets/Resume_hammer_icon_small.png");
   width: 80px;
   height: 80px;
   margin-right: 8%;
 }
-/* line 212, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 214, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .awards {
   background: url("/assets/Resume_star_icon_small.png");
   width: 80px;
   height: 76px;
   margin-right: 8%;
 }
-/* line 220, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 222, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #target, #resume #reads, #resume #work, #resume #education {
   margin-bottom: 4em;
 }
-/* line 223, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 225, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #target h1, #resume #reads h1, #resume #work h1, #resume #education h1 {
   color: #c12c13;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1895,11 +2052,11 @@ html, body {
   font-weight: 600;
   margin: 0 0 .5em 0;
 }
-/* line 230, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 232, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #target h1 .date, #resume #reads h1 .date, #resume #work h1 .date, #resume #education h1 .date {
   float: right;
 }
-/* line 235, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 237, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #target p, #resume #reads p, #resume #work p, #resume #education p {
   margin: 0 0 3em 0;
   color: #222;
@@ -1908,27 +2065,27 @@ html, body {
   line-height: 1.5em;
   font-weight: 300;
 }
-/* line 245, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 247, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #resume_skills {
   float: right;
   width: 40%;
   margin-right: 5%;
   vertical-align: top;
 }
-/* line 252, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 254, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume #awards {
   float: right;
   width: 40%;
   vertical-align: top;
 }
-/* line 258, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 260, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .bottom {
   width: 100%;
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
 }
-/* line 264, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 266, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .bottom h1 {
   color: #c12c13;
   font-family: 'Source Sans Pro', sans-serif;
@@ -1936,7 +2093,7 @@ html, body {
   font-weight: 700;
   margin: 0 0 .5em 0;
 }
-/* line 272, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 274, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .bottom ul {
   vertical-align: top;
   display: inline-block;
@@ -1950,7 +2107,7 @@ html, body {
   font-weight: 300;
   text-align: left;
 }
-/* line 287, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
+/* line 289, /home/bryan/Documents/knouse/app/assets/stylesheets/documents.css.scss */
 #resume .stretch {
   width: 100%;
   display: inline-block;

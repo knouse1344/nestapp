@@ -1,18 +1,27 @@
 <div class="header-wrap" data-spy="affix" data-offset-top="1">
 	<div id="top-navi">
-		<a class="name-link" href="/welcome/index">
-			<h1 class="bold">Bryan Knouse</h1>
-		</a>
-		<h1>/ENTREPRENEURSHIP</h1>
-		<div class="links">
-			<a href="/welcome/engineering">engineering<div class="box"></div></a>
-			<a class="selected" href="/welcome/entrepreneurship">entrepreneurship<div class="box"></div></a>
-			<a href="/welcome/design">design<div class="box"></div></a>
-			<a href="/documents/resume">resume</a>
+		<div class="navi-information">
+			<a class="name-link" href="/welcome/index">
+				<h1 class="bold">Bryan Knouse/</h1>
+			</a>
+			<h1>ENTREPRENEURSHIP</h1>
+		</div>
+		<div class="desktop-links">
+			<a href="/welcome/engineering"><i class="fa fa-cogs"></i>engineering<div class="box"></div></a>
+			<a class="selected" href="/welcome/entrepreneurship"><i class="fa fa-share-alt"></i>entrepreneurship<div class="box"></div></a>
+			<a href="/welcome/design"><i class="fa fa-cubes"></i>design<div class="box"></div></a>
+			<a href="/documents/resume"><i class="fa fa-file-text"></i>resume</a>
 <!-- 			<a href="mailto:bryan.knouse@gmail.com">email</a>
 			<a href="http://www.linkedin.com/pub/bryan-knouse/35/a7/a57" target="_blank">linkedin</a>
 			<a href="https://github.com/knouse1344" target="_blank">github</a> -->
 		</div>
+
+		<div class="mobile-links">
+			<a href="/welcome/engineering"><i class="fa fa-cogs"></i><div class="box"></div></a>
+			<a class="selected" href="/welcome/entrepreneurship"><i class="fa fa-share-alt"></i><div class="box"></div></a>
+			<a href="/welcome/design"><i class="fa fa-cubes"></i><div class="box"></div></a>
+			<a href="/documents/resume"><i class="fa fa-file-text"></i></a>
+		</div>		
 	</div>
 </div>
 
@@ -119,6 +128,24 @@
 </div>
 
 <script type="text/javascript">
+
+jQuery(function($) {
+	$('.st_one').delay(500).animate({
+		opacity: "1"
+	}, 500);
+	$('.st_two').delay(700).animate({
+		opacity: "1"
+	}, 500);
+	$('.st_three').delay(900).animate({
+		opacity: "1"
+	}, 500);	
+	$('.st_four').delay(1100).animate({
+		opacity: "1"
+	}, 500);
+	$('.st_five').delay(1300).animate({
+		opacity: "1"
+	}, 500);
+
 	$('.biz_circle').bind('fade-cycle', function() {
 	    $(this).fadeOut(3000, function() {
 	        $(this).fadeIn(2000, function() {
@@ -216,23 +243,6 @@
 	{
 		triggerOnce: true
 	});
+});
 
-
-	$(document).ready(function () {
-		$('.st_one').delay(500).animate({
-			opacity: "1"
-		}, 500);
-		$('.st_two').delay(700).animate({
-			opacity: "1"
-		}, 500);
-		$('.st_three').delay(900).animate({
-			opacity: "1"
-		}, 500);	
-		$('.st_four').delay(1100).animate({
-			opacity: "1"
-		}, 500);
-		$('.st_five').delay(1300).animate({
-			opacity: "1"
-		}, 500);
-	});
 </script>

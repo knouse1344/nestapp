@@ -81,6 +81,7 @@
 
 #eng_header {
 	width: 100%;
+	height: 180px;
 	padding-bottom: 4em;
 
 	h1 {
@@ -114,8 +115,6 @@
 	width: 100%;
 	height: .8em;
 	background: #999;
-	margin-left: -1em;
-	padding-right: 1em;
 	margin-bottom: -.5em;
 	box-shadow: 0px 8px 10px #000;
 	z-index: 15;
@@ -126,9 +125,7 @@
 	width: 100%;
 	height: .8em;
 	background: #999;
-	margin-left: -1em;
 	margin-top: -.5em;
-	padding-right: 1em;
 	z-index: 15;
 	-webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -140,6 +137,7 @@
 #code_area {	
 	padding-top: .5em;
 	width: 100%;
+	height: 550px;
 	background: #272822;
 	z-index: -10;
 	-webkit-transition: all 1s;
@@ -147,10 +145,6 @@
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
-
-	.container {
-		height: 600px;
-	}
 }
 
 #nav_btns {
@@ -218,7 +212,7 @@
 
 	.description {
 		width: 27%;
-		padding: 40px;
+		padding: 25px 5px 25px 25px;
 		max-height: 420px;
 		min-width: 325px;
 		left: 3%;
@@ -239,6 +233,14 @@
 		}
 	}
 
+	.description .mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail {
+		border-radius: 0;
+	}
+
+	.description .mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+		border-radius: 0;
+	}
+
 	.digital {
 		width: 100%;
 		height: 100%;
@@ -249,7 +251,7 @@
 
 		.digi {
 			width: 35%;
-			padding: 40px;
+			padding: 25px 5px 25px 25px;
 			max-height: 420px;
 			right: 7%;
 			position: absolute;
@@ -273,6 +275,14 @@
 					border-bottom: 1px solid;
 				}
 			}
+		}
+
+		.digi .mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail {
+			border-radius: 0;
+		}
+
+		.digi .mCS-inset-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+			border-radius: 0;
 		}
 
 		.skills {
@@ -305,7 +315,7 @@
 	}
 
 	.concepts {
-		width: 95%;
+		width: 100%;
 		height:100%;
 		padding-left: 5%;
 		position: absolute;
@@ -322,7 +332,7 @@
 	}
 
 	.design {
-		width: 95%;
+		width:100%;
 		height: 100%;
 		padding-left: 5%;
 		position: absolute;
@@ -339,7 +349,7 @@
 	}
 
 	.testing {
-		width: 95%;
+		width: 100%;
 		height: 100%;
 		padding-left: 5%;
 		position: absolute;
@@ -356,7 +366,7 @@
 	}
 
 	.construction {
-		width: 95%;
+		width: 100%;
 		height: 100%;
 		padding-left: 5%;
 		position: absolute;
@@ -373,6 +383,21 @@
 	}
 }
 
+@media all and (max-width: 768px) {
+
+	#concept_row {
+		.digital {
+			.digi {
+				width: 60%;
+			}
+		}
+
+		.description {
+			width: 60%;
+		}
+	}
+}
+
 .stretch {
 	width: 100%;
 	display: inline-block;
@@ -385,7 +410,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////DESIGN
 
 #des_title {
-	padding-top: 4em;
+	padding-top: 200px;
 	padding-bottom: 8em;
 	text-align: center;
 
@@ -398,17 +423,35 @@
 .subtitle_bar {
 	width: 100%;
 	background: #424242;
-	height: 6em;
-	padding-top: 1.5em;
+	height: 80px;
 
 	.subtitle {
-		font-size: 5em;
+		font-size: 60px;
 		letter-spacing: -2px;
+		line-height: 80px;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 600;
 		color: #fff;
 		text-align: right;
 		margin-right: 20%
+	}
+}
+
+@media all and (max-width: 768px) {
+
+	.subtitle_bar {
+		height: 50px;
+
+		.subtitle {	
+			font-size: 40px;
+			line-height: 50px;
+			letter-spacing: -2px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 600;
+			color: #fff;
+			text-align: right;
+			margin-right: 20%		
+		}
 	}
 }
 
@@ -1254,13 +1297,7 @@
 					margin: auto;
 					display: block;
 					width:auto;
-					padding: 15px;
-					background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(79%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-					background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-					background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-					background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* IE10+ */
-					background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* W3C */
+
 				}
 
 				.earnings_graph_axes {
@@ -1368,7 +1405,6 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		font-size: 1.1em;
-		display: inline-block;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		width: 100%;
@@ -1377,6 +1413,14 @@
 
 	#responsive_growth {
 		width: 100%;
+		padding: 15px 15px 100px 15px;
+		margin-bottom: 60px;
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
 		
 		.graph_desc {
 			width: 40%;
@@ -1439,12 +1483,18 @@
 	#bfgrowth {
 		margin-left:auto;
 		margin-right:auto;
-		padding: 2em 0 3em 0;
+		padding: 15px 15px 100px 15px;
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
 
 		.graph_desc {
 			width: 40%;
 			font-size: .9em;
-			display: inline-block;
+			display: inline-block;		
 		}
 
 		.growth_graph {
