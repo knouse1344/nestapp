@@ -640,7 +640,7 @@
 #data {
 	width: 100%;
 	position: relative;
-	min-height: 900px;
+	min-height: 700px;
 	background: #898989;
 	padding-bottom: 4em;
 
@@ -712,6 +712,7 @@
 			width: 800px;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
+			padding: 40px 0;
 			line-height: 1.6em;
 			font-weight: 200;
 			text-align: center;
@@ -780,7 +781,8 @@
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
 			line-height: 1.6em;
-			font-weight: 200;
+			font-weight: 200;			
+			padding: 40px 0;
 			text-align: center;
 		}
 	}
@@ -846,6 +848,7 @@
 			width: 800px;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
+			padding: 40px 0;
 			line-height: 1.6em;
 			font-weight: 200;
 			text-align: center;
@@ -867,6 +870,7 @@
 			width: 90%;
 			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1.25em;
+			padding: 40px 0;
 			line-height: 1.6em;
 			font-weight: 200;
 			text-align: center;
@@ -902,7 +906,7 @@
 	width: 100%;
 	background: #222;
 	height: 4px;
-	padding-top: 7px;
+	padding-top: 3px;
 	padding-bottom: 7px;
 	border-top: 4px solid #888;
 	border-bottom: 4px solid #888;
@@ -1411,12 +1415,8 @@
 		width: 100%;
 		padding: 15px 15px 100px 15px;
 		margin-bottom: 60px;
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
+		background: rgba(0,0,0,.025);
+		border: 2px solid #dedede;
 		
 		.graph_desc {
 			width: 40%;
@@ -1480,12 +1480,8 @@
 		margin-left:auto;
 		margin-right:auto;
 		padding: 15px 15px 100px 15px;
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
+		background: rgba(0,0,0,.025);
+		border: 2px solid #dedede;
 
 		.graph_desc {
 			width: 40%;
