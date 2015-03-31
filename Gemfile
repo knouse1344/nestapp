@@ -27,6 +27,7 @@ gem 'actionpack-action_caching'
 gem 'rails_12factor', group: :production
 
 gem 'sitemap_generator'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
