@@ -10,4 +10,21 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function() {
+
+	// Login ESC Click Event
+
+	$(document).keydown(function(e) {
+		if(e.keyCode == 27) {
+		  window.location.href = "/signin";
+		}
+	});
+
+
+	
+})

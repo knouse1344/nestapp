@@ -2,18 +2,19 @@
 <html>
 <head>
   <title>Bryan Knouse | Engineer, Designer, Entrepreneur</title>
-  <!-- #######  NEEDS DATED VERSION OF JQUERY FOR MAPSTER TO WORK  ######## -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <meta name="description" content="Bryan Knouse is a technical and creative individual, currently focused on developing enterprise web products in New York, New York.">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700|Cardo:400,700|Oswald:400,700' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-  <script>
+</head>
+
+<body>
+
+	<%= yield %>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto+Slab|Roboto:300,600' rel='stylesheet' type='text/css'>
+    <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,31 +24,5 @@
     ga('send', 'pageview');
 
   </script>
-
-  <script type="text/javascript">
-
-  var utag_data = {
-    page_name : "homepage", //
-    page_type : "landing", //
-    brand : "bryan knouse", //
-    nav : "navigation event" //
-  }
-
-  </script>
-
-  <script type="text/javascript">
-    (function(a,b,c,d){
-    a='//tags.tiqcdn.com/utag/campbells/geotest/dev/utag.js';
-    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-  })();
-
-  </script>
-</head>
-
-<body>
-
-	<%= yield %>
-
 </body>
 </html>

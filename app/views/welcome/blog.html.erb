@@ -1,0 +1,35 @@
+<div id="blog">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h1>Bryan Knouse</h1>
+				<% if signed_in? %>
+					<a href="#">Add Post</a>
+					<a href="/signin">Log Out</a>
+				<% end %>
+				<ul class="navigation">
+					<li>Section</li>
+					<li>Another</li>
+					<li>Eagles</li>
+					<li>Football</li>
+				</ul>
+			</div>
+			<div class="col-sm-8">
+				<% if signed_in? %>
+
+					<%= form_for Blogpost.new do |b| %>
+
+						<%= b.submit "Save Post", class: "submit" %>
+						<%= b.text_field :name, class: "form-control", placeholder: "Post Title" %>
+						<%= b.text_field :body, class: "form-control", placeholder: "Post Body" %>
+
+					<% end %>
+
+				<% end %>
+				
+				<%= render @blogposts %>
+
+			</div>
+		</div>
+	</div>
+</div>
